@@ -1,0 +1,52 @@
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,fieldset,legend,td,th,form,textarea,header,section,article,aside,figure,footer,nav{margin:0;padding:0}
+li{list-style:none}
+img{border:none;}
+a,input,area{outline:none}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal}
+em,i{font-style:normal}
+table{border-collapse:collapse}
+a{text-decoration:none}
+fieldset{border:none}
+#top{height:40px; background:#f9f9f9; border-bottom:1px solid #D9D9D9;}
+#daohang{height:40px; margin:0 auto; line-height:40px; font-size: 12px; width:1190px;}
+#daohang a:hover{text-decoration:none;}
+#dao1,#dao2{float: left;}
+
+#dao1{color:#999;}
+#dao1 a{color:red;}
+#dao2 img{ line-height:40px;}
+#dao2 {float: right;}
+#dao2 ul li{float:left;width:}
+#dao2 ul li:nth-child(2) ul li{float:none;}
+#dao2 ul li a{border-left:1px solid #D9D9D9;padding:0 10px; color:#999; }
+#dao2 ul li a:hover{color: deepskyblue;}
+
+#dao2 ul li:nth-child(5) a:hover{color:#999;}
+#dao2 ul li:nth-child(1) a{border:none;}
+
+#dao2 ul li:nth-child(2){height:36px; width:95px; position: relative;  line-height: 40px;}
+
+#dao2 ul li:nth-child(2) ul{position: absolute; margin-top:-5px;background:#fff; display: none; border: 1px solid #D9D9D9 ; border-top: none; top:40px; width:94px;}
+#dao2 ul li:nth-child(2) ul li a{ border:none;font-size:12px;}
+#dao2 ul li:nth-child(2):hover ul{display: block;height:125px; z-index: 10;}
+
+/*#dao2 ul li:nth-child(2):hover{background:#fff;margin-top:4px;border-bottom: none; }*/
+#dao2 ul .dao201:hover{background:#fff; border: 1px solid #D9D9D9 ; border-bottom: none; margin-top:4px;line-height: 30px; width:95px;}
+
+#dao2 ul li:nth-child(5){position: relative; height:36px; line-height: 40px; width:70px;}
+
+#dao2 ul li:nth-child(5) .dao4{width:150px; height:150px;margin-left:18px;}
+#dao2 ul li:nth-child(5) ul{width:190px; height:190px; background:#fff; border:1px solid #D9D9D9 ; line-height: 190px; position: absolute; right:-102px;border-top:none; top: 35px; display: none;}
+ #dao2 ul li:nth-child(5):hover ul{display: block;height:194px;}
+ /* #dao2 ul li:nth-child(5):hover{ background:#fff; border:1px solid #D9D9D9 ;margin-top:4px; border-bottom: none; }*/
+ #dao2 ul li:nth-child(5):hover{background:#fff; border: 1px solid #D9D9D9 ; margin-top:4px;line-height: 30px;border-bottom: none; z-index: 10;}
+
+
+
+
+.tu {width:1190px; margin:0 auto;}
+
+
+
+#sousuo{padding-top:30px;width:1190px; margin:0 auto;}
+
