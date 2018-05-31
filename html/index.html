@@ -4,11 +4,17 @@
 		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="description" content="Example of Fluid Layout with Bootstrap version 2.0 from w3cschool.cc">
-	    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 	    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	    
+		<script type="text/javascript" src="../js/sport.js"></script>
 		<title>量格购</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
 	</head>
 	<body>
+		
+
 	<!--导航-->
 	<div id="top">
 	   <div id="daohang">
@@ -19,8 +25,8 @@
 	      		<ul>
 	      			<li><a href="#">我的订单</a></li>
 	      			<li class="dao201">
-	      				<a href="#">
-			      			我的小量&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../index_files/0_001.jpg"/>
+	      				<a href="#" class="dao201_1">
+			      			我的小量
 			      		</a>
 			      		<ul>
 			      			<li><a href="#">我的优惠券</a></li>
@@ -54,18 +60,330 @@
 	
 	
 	<!--搜索栏-->
-	<<div id="head" class="container-fluid">
-    	<div class="col-xs-3 "><img src="../index_files/b902fe028aeb7fd9f378d5a0fd20122c.png"/></div>
+	<div id="sousuo" class="container-fluid">
+    	<div class="col-xs-3 " id="sou1"><img src="../index_files/b902fe028aeb7fd9f378d5a0fd20122c.png"/></div>
 		  
-		  <div class="col-xs-6 "><input type="text" name="txt" id="txt" value="" /><button id="btn">搜宝贝</button><br><p>iphone6 丨 宁方优 丨 马油 丨 面膜 丨 耐克 丨</p></div>
+		  <div class="col-xs-6 " id="sou2"><input type="text" name="txt" id="txt" placeholder="Mate10" /><button id="btn">搜索</button><br>
+		  <p><a href="#">华为</a>  丨  <a href="#">牛肉丸</a>  丨   <a href="#">茶叶</a>  丨  <a href="#">华为笔记本</a>  丨 </p>
+		  </div>
 		  
 		 <div class="col-xs-1 "></div>
-		  <div class="col-xs-2 "><button id="btn-cart"><span>购物车</span></button></div>
+		  <div class="col-xs-2 " id="sou3">
+		  	<a href="#" id="sou4">
+		  		<img src="../index_files/0_006.png"/>购物车&nbsp; 〉
+		  		<b></b>
+		  			<!--加载中
+		  			购物车中还没有商品，赶紧选购吧-->
+		  	</a>
+		  </div>
     </div>
-  	
-  	
-<script type="text/javascript" src="../js/jquery-1.11.3.js></script>
-<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<!--轮播上面-->
+	<div class="lunbotop">
+		<ul>
+			<li><a href="#">所有商品分类</a></li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">会员中心</a></li>
+			<li><a href="#">品牌区</a></li>
+			<li><a href="#">帮助中心</a></li>
+			<li><a href="#">关于我们</a></li>
+		
+		</ul>
+	</div>
+<!--轮播-->
+<div class="center">
+	<div class="lunbo">
+		<ul>
+			<li>
+				<a href="#">手机数码</a>
+
+				<ol id="lie1">
+					<li><a href="#">手机</a></li>
+					<li><a href="#">移动硬盘</a></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">HUAWEI/华为</a> 丨 <a href="#">xiaomi/小米</a><br />
+						<a href="#">Meizu/魅族</a> 丨 <a href="#">OPPO/欧珀</a><br />
+						<a href="#">vivo/步步高</a> 丨 <a href="#">Seagate/希捷</a><br />
+						<a href="#">WD/西部数据</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#">服饰箱包</a>
+				<ol id="lie2">
+					<li><a href="#">男装</a></li>
+					<li><a href="#">女装</a></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">七巧豆</a>
+						<!-- 丨 <a href="#">xiaomi/小米</a><br />
+						<a href="#">Meizu/魅族</a> 丨 <a href="#">OPPO/欧珀</a><br />
+						<a href="#">vivo/步步高</a> 丨 <a href="#">Seagate/希捷</a><br />
+						<a href="#">WD/西部数据</a>-->
+					</li>
+					<li><a href="#">内衣</a></li>
+					<li><a href="#">男鞋</a></li>
+					<li></li>
+					<li></li>
+					<li><a href="#">女鞋</a></li>
+					<li><a href="#">童装</a></li>
+				</ol>
+			</li>
+			
+			<li>
+				<a href="#">电脑办公</a>
+				<ol id="lie3">
+					<li><a href="#">笔记本</a></li>
+					<li><a href="#">平板电脑</a></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">HUAWEI/华为</a>丨 <a href="#">xiaomi/小米</a><br />
+						<a href="#">Asus/华硕</a> 丨 <a href="#">Lenovo/联想</a><br />
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#">母婴玩具</a>
+				<ol id="lie4">
+					<li><a href="#">纸尿裤</a></li>
+					<li><a href="#">奶瓶</a></li>
+					<li></li>
+					<li>
+						
+						<b>相关品牌</b><br />
+						<a href="#">Rluckey/乐起</a> 丨 <a href="#">Nestle/雀巢</a><br />
+						<a href="#">Wyeth/惠氏</a> 丨 <a href="#">Friso/美素佳儿</a><br />
+						<a href="#">云小卷</a>
+						
+					</li>
+					<li><a href="#">奶粉</a></li>
+				</ol>
+			</li>
+			<li>
+				<a href="#">食品酒水</a>
+				<ol id="lie5">
+					<li><a href="#">茶叶</a></li>
+					<li><a href="#">酒</a></li>
+					<li></li>
+					
+    
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">红派司</a>
+					</li>
+					<li><a href="#">面包</a></li>
+					<li><a href="#">零食</a></li>
+					<li></li>
+					<li></li>
+					<li><a href="#">特产</a></li>
+					<li><a href="#">水果罐头</a></li>
+				</ol>
+			</li>
+			
+			<li>
+				<a href="#">美容护肤</a>
+				<ol id="lie6">
+					<li><a href="#">面膜</a></li>
+					<li><a href="#">洁面乳</a></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">我的蜜肌</a> 丨 <a href="#">两面针</a><br />
+					</li>
+					<li><a href="#">牙膏</a></li>
+					<li><a href="#">爽肤水</a></li>
+					<li></li>
+					<li></li>
+					<li><a href="#">卸妆水</a></li>
+					<li><a href="#">喷雾</a></li>
+					<li></li>
+					<li></li>
+					<li><a href="#">洗手液</a></li>
+				</ol>
+			</li>
+			
+			<li>
+				<a href="#">家用电器</a>
+				<ol id="lie7">
+					<li><a href="#">电视</a></li>
+					<li><a href="#">电饭煲</a></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">xiaomi/小米</a>丨 <a href="#">SUPOR/苏泊尔</a><br />
+						<a href="#">Flyco/飞科</a> 丨 <a href="#">EVERTOP/宝丽</a><br />
+						<a href="#">LEFUS/乐芙仕</a>
+					</li>
+					<li><a href="#">电磁炉</a></li>
+					<li><a href="#">吹风机</a></li>
+					<li></li>
+					<li></li>
+					<li><a href="#">扫地机</a></li>
+					<li><a href="#">空气净化器</a></li>
+					<li></li>
+					<li></li>
+					<li><a href="#">净水器</a></li>
+				</ol>
+			</li>
+			
+			<li>
+				<a href="#">居家用品</a>
+				<ol id="lie8">
+					<li><a href="#">智能水杯</a></li>
+					<li><a href="#">茶具</a></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">ZUOER/佐尔</a>
+					</li>
+					<li><a href="#">餐具</a></li>
+					<li><a href="#">床上用品</a></li>
+					<li></li>
+					<li></li>
+					<li><a href="#">去油剂</a></li>
+					
+				</ol>
+			</li>
+			
+			<li>
+				<a href="#">汽配五金</a>
+				<ol id="lie9">
+					<li><a href="#">记录仪</a></li>
+					<li></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">瑞世泰</a>
+					</li>
+				</ol>
+			</li>
+			
+			<li>
+				<a href="#">运动户外</a>
+				<ol id="lie10">
+					<li><a href="#">跑步机</a></li>
+					<li><a href="#">平衡车</a></li>
+					<li></li>
+					<li>
+						<b>相关品牌</b><br />
+						<a href="#">悦贝</a>
+					</li>
+				</ol>
+			</li>
+			
+			
+		</ul>
+		
+	</div>	
+
+
+	<div class="lun">
+		<div id="myCarousel" class="carousel slide" >
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<a href="#"><img src="../index_files/cdb480ed4f7655eab535f6a527b86c5f.png" style="width:750px; height:400px;" alt="First slide"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="../index_files/ce68ef7131ad0db06c2ad77e05aed183.png" style="width:750px; height:400px;" alt="Second slide"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="../index_files/e6107178173d4bb5bdd4620320cb1a39.png" style="width:750px; height:400px;" alt="Third slide"></a>
+				</div>
+			</div>
+			
+			<script type="text/javascript">
+				$(function(){
+				// 初始化轮播
+				$("#myCarousel").carousel('cycle');
+					
+				})
+		//		$(function(){
+		//			$(".active").hover(number)
+		////			.carousel(number)
+		////		Cycles the carousel to a particular frame (0 based, similar to an array).
+		//		})
+				
+			</script>
+			
+		</div> 
+	</div>
+	
+	<div id="lun_right">
+		<div class="lun_right1">在线咨询 <img src="../index_files/0_007.jpg"/></div>
+		<div class="lun_right2">
+			<a href="#">
+				<em class="em1"></em>
+				<span>权威荣誉</span>
+			</a>
+			<a href="#">
+				<em class="em2"></em>
+				<span>品牌授权</span>
+			</a>
+			<a href="#">
+				<em class="em3"></em>
+				<span>正品保险</span>
+			</a>
+			<a href="#">
+				<em class="em4"></em>
+				<span>诚信认证</span>
+			</a>
+			<a href="#">
+				<em class="em5"></em>
+				<span>满79包邮</span>
+			</a>
+			<a href="#">
+				<em class="em6"></em>
+				<span>退换无忧</span>
+			</a>
+			<a href="#">
+				<em class="em7"></em>
+				<span>隐私包装</span>
+			</a>
+			<a href="#">
+				<em class="em8"></em>
+				<span>金牌商家</span>
+			</a>
+			
+			
+		</div>
+		<h3 class="more">最新公告 <a href="#">更多>></a></h3>
+		<ul class="gengxin">
+			<li> <img src="../index_files/dian.png"/> <a href="#">网站更新维护通知</a> </li>
+		</ul>
+	</div>
+	
+</div>	
+<!--今日限购-->
+	<div class="shop">
+		<div class="shop_left">
+			<div class="clock">
+				<div class="clock-h" id="ClockHours" style="-webkit-transform: rotate(93deg);"></div>
+				<div class="clock-m"></div>
+				<div class="clock-s"></div>
+			</div>
+		</div>
+		<div class="shou_img">
+			<a href="#"><img src="../index_files/83101f8002821cf67b6c47409be2d287.jpg"/></a>
+			<a href="#"><img src="../index_files/45fbd87dfcc3d5c9eab3e2e628bc74ae.jpg"/></a>
+			<a href="#"><img src="../index_files/54c0f56c0cf39baeb61fa5d245cd0535.jpg"/></a>
+			<a href="#"><img src="../index_files/334443ee9803441b8a47bf99cad80c6e.jpg"/></a>
+		</div>
+		
+	</div>
+	
+		  
+
+
 
 	</body>
 </html>

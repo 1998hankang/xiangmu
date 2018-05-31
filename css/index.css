@@ -1,15 +1,16 @@
 body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,fieldset,legend,td,th,form,textarea,header,section,article,aside,figure,footer,nav{margin:0;padding:0}
 li{list-style:none}
 img{border:none;}
-a,input,area{outline:none}
+
 h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal}
 em,i{font-style:normal}
 table{border-collapse:collapse}
 a{text-decoration:none}
 fieldset{border:none}
+body a:hover{text-decoration:none;}
 #top{height:40px; background:#f9f9f9; border-bottom:1px solid #D9D9D9;}
 #daohang{height:40px; margin:0 auto; line-height:40px; font-size: 12px; width:1190px;}
-#daohang a:hover{text-decoration:none;}
+
 #dao1,#dao2{float: left;}
 
 #dao1{color:#999;}
@@ -31,6 +32,13 @@ fieldset{border:none}
 #dao2 ul li:nth-child(2):hover ul{display: block;height:125px; z-index: 10;}
 
 /*#dao2 ul li:nth-child(2):hover{background:#fff;margin-top:4px;border-bottom: none; }*/
+#dao2 ul .dao201 .dao201_1{background: url(../index_files/qian.png) no-repeat left top;background-position: 70px 5px; padding-right: 20px;}
+#dao2 ul .dao201:hover .dao201_1{background-position: 70px -20px;}
+
+    
+
+
+
 #dao2 ul .dao201:hover{background:#fff; border: 1px solid #D9D9D9 ; border-bottom: none; margin-top:4px;line-height: 30px; width:95px;}
 
 #dao2 ul li:nth-child(5){position: relative; height:36px; line-height: 40px; width:70px;}
@@ -48,5 +56,421 @@ fieldset{border:none}
 
 
 
-#sousuo{padding-top:30px;width:1190px; margin:0 auto;}
+#sousuo{padding-top:30px;width:1220px; margin:0 auto;}
+#sou1{}
+#sou2{text-align: center; margin-left:60px;}
+#sou2 input{border:#0083FF solid 3px; height:36px; width:410px; padding-top:4px;}
+#sou2 button{border:none; height:36px;width:92px; background:#0083FF; font-size:20px; color:#fff;}
+#sou2 p{text-align: left; padding-left: 32px; color:#B9B9B9; font-size:12px; padding-top:10px;}
+#sou2 p a{color:firebrick;font-size:12px;}
+#sou2 p a:nth-child(3){color:#999;}
+#sou2 p a:nth-child(4){color:#999;}
+#sou2 p a:nth-child(3):hover{color:#299aef;}
+#sou2 p a:nth-child(4):hover{color:#299aef;}
 
+
+#sou3{border:#E9E9E9 1px solid; height:38px; width:132px; background:#F9F9F9; float: right;}
+#sou3 a{font-size:12px; line-height:38px ; color:#9D9D9D; position: relative;}
+#sou3 a img{margin-bottom: 10px; padding-right: 4px;}
+#sou3 a:hover b{ display: block;}
+#sou3 a b{display: block; position:absolute;height:48px; width:320px; left:-204px; top:25px; border:red 1px solid; border-top:red 2px solid; display: none;}
+
+.lunbotop{width:1190px; margin:0 auto; height:34px;line-height: 34px; border-bottom: 2px solid #1985d9;}
+.lunbotop ul li{float:left;}
+.lunbotop ul li a{color:#424242; padding:0 15px; font-size:13px;}
+.lunbotop ul li:nth-child(1){height:34px;width:180px; background:#1985d9;}
+.lunbotop ul li:nth-child(1) a{color:#fff;}
+.lunbotop ul li a:hover{color:#299aef;}
+.lunbotop ul li:nth-child(1) a:hover{color:#fff;}
+
+
+.lunbo{height:400px; width:1190px; margin:0 auto;}
+
+.lunbo ul{background:#299aef; width:180px; position: relative;}
+.lunbo ul li{height:40px; line-height:40px; position: relative;}
+.lunbo ul li a{padding-left:15px; color:#fff;}
+
+.lunbo ul li ol{position: absolute; width:1010px; height:400px; background:#fff; top:0; left:180px; z-index: 100;}
+
+.lunbo ul li ol li{float: left;width:252px; font-size:12px; line-height: 20px;padding-top:8px;}
+.lunbo ul li ol li a{padding-left:0;}
+
+
+
+
+
+
+
+
+
+#lie1 li a{color:#5e5e5f;}
+#lie1 li:nth-child(1) a{font-weight: bold;}
+#lie1 li:nth-child(2) a{font-weight: bold;}
+#lie1 li{padding-left:10px;}
+#lie1 li:last-child b{color:#f25c15;}
+#lie1{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(1):hover{background:#fff;}
+.lunbo ul li:nth-child(1):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(1):hover #lie1{display: block;}
+
+#lie2{top:-40px;}
+#lie2 li a{color:#5e5e5f;}
+
+#lie2 li:nth-child(4) a{font-weight: normal;}
+#lie2 li a{font-weight: bold;}
+#lie2 li{padding-left:10px;}
+#lie2 li b{color:#f25c15;}
+#lie2{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(2):hover{background:#fff;}
+.lunbo ul li:nth-child(2):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(2):hover #lie2{display: block;}
+
+#lie3{top:-80px;}
+#lie3 li a{color:#5e5e5f;}
+#lie3 li:nth-child(4) a{font-weight: normal;}
+#lie3 li a{font-weight: bold;}
+#lie3 li{padding-left:10px;}
+#lie3 li b{color:#f25c15;}
+#lie3{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(3):hover{background:#fff;}
+.lunbo ul li:nth-child(3):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(3):hover #lie3{display: block;}
+
+
+#lie4{top:-120px;}
+#lie4 li a{color:#5e5e5f;}
+#lie4 li:nth-child(4) a{font-weight: normal;}
+#lie4 li a{font-weight: bold;}
+#lie4 li{padding-left:10px;}
+#lie4 li b{color:#f25c15;}
+#lie4{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(4):hover{background:#fff;}
+.lunbo ul li:nth-child(4):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(4):hover #lie4{display: block;}
+
+
+#lie5{top:-160px;}
+#lie5 li a{color:#5e5e5f;}
+#lie5 li:nth-child(4) a{font-weight: normal;}
+#lie5 li a{font-weight: bold;}
+#lie5 li{padding-left:10px;}
+#lie5 li b{color:#f25c15;}
+#lie5{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(5):hover{background:#fff;}
+.lunbo ul li:nth-child(5):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(5):hover #lie5{display: block;}
+
+
+#lie6{top:-200px;}
+#lie6 li a{color:#5e5e5f;}
+#lie6 li:nth-child(4) a{font-weight: normal;}
+#lie6 li a{font-weight: bold;}
+#lie6 li{padding-left:10px;}
+#lie6 li b{color:#f25c15;}
+#lie6{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(6):hover{background:#fff;}
+.lunbo ul li:nth-child(6):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(6):hover #lie6{display: block;}
+
+
+#lie7{top:-240px;}
+#lie7 li a{color:#5e5e5f;}
+#lie7 li:nth-child(4) a{font-weight: normal;}
+#lie7 li a{font-weight: bold;}
+#lie7 li{padding-left:10px;}
+#lie7 li b{color:#f25c15;}
+#lie7{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(7):hover{background:#fff;}
+.lunbo ul li:nth-child(7):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(7):hover #lie7{display: block;}
+#myCarousel{width:750px; height:400px;}
+
+
+#lie8{top:-280px;}
+#lie8 li a{color:#5e5e5f;}
+#lie8 li:nth-child(4) a{font-weight: normal;}
+#lie8 li a{font-weight: bold;}
+#lie8 li{padding-left:10px;}
+#lie8 li b{color:#f25c15;}
+#lie8{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(8):hover{background:#fff;}
+.lunbo ul li:nth-child(8):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(8):hover #lie8{display: block;}
+#myCarousel{width:750px; height:400px;}
+
+
+#lie9{top:-320px;}
+#lie9 li a{color:#5e5e5f;}
+#lie9 li:nth-child(4) a{font-weight: normal;}
+#lie9 li a{font-weight: bold;}
+#lie9 li{padding-left:10px;}
+#lie9 li b{color:#f25c15;}
+#lie9{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(9):hover{background:#fff;}
+.lunbo ul li:nth-child(9):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(9):hover #lie9{display: block;}
+#myCarousel{width:750px; height:400px;}
+
+
+#lie10{top:-360px;}
+#lie10 li a{color:#5e5e5f;}
+#lie10 li:nth-child(4) a{font-weight: normal;}
+#lie10 li a{font-weight: bold;}
+#lie10 li{padding-left:10px;}
+#lie10 li b{color:#f25c15;}
+#lie10{display: none;border-right:1px solid #e7e8e7;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(10):hover{background:#fff;border-bottom:1px solid #e7e8e7;}
+.lunbo ul li:nth-child(10):hover a{ color:#1885d9;}
+.lunbo ul li:nth-child(10):hover #lie10{ display: block;}
+
+#myCarousel{width:750px; height:400px;}
+
+.lun{position:absolute; top:0; left:217px;}
+.center{position: relative;}
+
+
+
+#lun_right{height:400px;width:260px; position:absolute;left:967px;top:0; border-right:1px solid #e7e8e7; height:279px;border-bottom:1px solid #e7e8e7;}
+.lun_right1{width:260px; height:37px;border-bottom:1px solid #e7e8e7;color: #333;font-family: "微软雅黑";font-size: 16px; line-height:37px;} 
+.lun_right1 img{padding-left: 46px;}
+.lun_right2{width:260px;height:169px;padding-top: 18px;border-bottom:1px solid #e7e8e7;}
+.lun_right2 a{display: block; height:64px; width: 64px; color: #5e5e5e;float:left;margin-bottom: 10px;line-height: 30px;text-align: center;}
+
+
+
+
+
+
+.lun_right2 a em{height:35px; width:35px;color: #0083ce;display: block;margin: 0 auto;}
+.lun_right2 a .em1:hover {
+	-webkit-animation: toTopFromBottom .5s forwards;
+	-moz-animation: toTopFromBottom .5s forwards;
+   	animation: toTopFromBottom .5s forwards;
+}
+
+
+.lun_right2 a .em1{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -5px 0;}
+.lun_right2 a .em2{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -50px 0;}
+.lun_right2 a .em3{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -95px 0;}
+.lun_right2 a .em4{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -140px 0;}
+.lun_right2 a .em5{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -185px 0;}
+.lun_right2 a .em6{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -230px 0;}
+.lun_right2 a .em7{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -275px 0;}
+.lun_right2 a .em8{background: url(../index_files/icon_gonggao.png) no-repeat left top;background-position: -320px 0;}
+
+
+	
+.more{padding-left:10px; color: #333; font-family: "微软雅黑"; font-weight: normal; font-size: 16px; line-height: 36px; height:36px; border-bottom: 1px solid #e7e8e7; margin-top:0;}
+.more a{color: #e72418;font-size:12px; float: right;}
+.more a:hover{color: #e72418;}
+.gengxin img{padding:0 10px;margin-top: 0; margin-bottom: 0;}
+.gengxin a{color: #5e5e5e; font-size:12px;}
+.gengxin li{ border-bottom: 1px solid #e7e8e7;}
+.gengxin{line-height: 25px;}
+
+
+
+
+.shop{height:200px; width:1190px; margin:0 auto; margin-top:20px;}
+.shop_left{height:150px; width:180px;float:left;position: relative; background:url(../index_files/clock01.png)}
+.shou_img{float:right;height:150px;width:1010px;}
+.shou_img  img{display:block; height:150px; float:left;margin-right:3px;}
+.shou_img a:last-child img{margin-right:0;margin-left:1px;}
+.shou_img  img:hover{opacity: 0.8;}
+
+
+.shop .clock {
+
+    position: absolute;
+    left: 63px;
+    top: 32px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 6px solid transparent;}
+
+.shop .clock::before {
+
+    content:"";
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+    background: #1985D9;
+	background-color: rgb(25, 133, 217);
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-image: none;
+	background-size: auto auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+}
+
+.shop .clock .clock-h {
+
+    position: absolute;
+    top: 5px;
+    left: 19px;
+    height: 18px;
+    width: 5px;
+    background: url(../index_files/clock_h.png) no-repeat;
+        background-color: rgba(0, 0, 0, 0);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-image: url(../index_files/clock_h.png);
+        background-size: auto auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    transform: rotate(10deg);
+    -webkit-transform-origin: 2.5px 16.5px;
+        transform-origin: 2.5px 16.5px 0px;
+    -moz-transform-origin: 2.5px 16.5px;
+        transform-origin: 2.5px 16.5px 0px;
+    transform-origin: 2.5px 16.5px;
+}
+
+.shop .clock .clock-m {
+	position: absolute;
+	left: 5px;
+	top: 19px;
+	width: 19px;
+	height: 5px;
+}
+.shop .clock .clock-m::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: -17px;
+    width: 4px;
+    height: 21px;
+    background-color: #1985D9;
+    border-radius: 2px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+    background: url(../index_files/clock_m.png) no-repeat;
+        background-color: rgba(0, 0, 0, 0);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-image: url(../index_files/clock_m.png);
+        background-size: auto auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: transparent;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: transparent;
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+    -webkit-transform-origin: 2.5px 19.5px;
+        transform-origin: 2.5px 19.5px 0px;
+    -webkit-animation: tick-tock 20s steps(60,end) infinite;
+        animation-name: tick-tock;
+        animation-duration: 20s;
+        animation-timing-function: steps(60);
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    -moz-transform-origin: 2.5px 19.5px;
+        transform-origin: 2.5px 19.5px 0px;
+    -moz-animation: tick-tock 20s steps(60,end) infinite;
+        animation-name: tick-tock;
+        animation-duration: 20s;
+        animation-timing-function: steps(60);
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    transform-origin: 2.5px 19.5px;
+    animation: tick-tock 20s steps(60,end) infinite;
+        animation-name: tick-tock;
+        animation-duration: 20s;
+        animation-timing-function: steps(60);
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+}
+
+.shop .clock .clock-s {
+    position: absolute;
+    left: 17px;
+    top: -6px;
+    width: 5px;
+    height: 26px;
+    -webkit-transform-origin: bottom;
+        transform-origin: center bottom 0px;
+    -webkit-animation: tick-tock 10s linear infinite;
+        animation-name: tick-tock;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    -moz-transform-origin: bottom;
+        transform-origin: center bottom 0px;
+    -moz-animation: tick-tock 10s linear infinite;
+        animation-name: tick-tock;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    transform-origin: bottom;
+    animation: tick-tock 10s linear infinite;
+        animation-name: tick-tock;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+}
+.shop .clock .clock-s::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+}
