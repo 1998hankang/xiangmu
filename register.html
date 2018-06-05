@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Example of Fluid Layout with Bootstrap version 2.0 from w3cschool.cc">
+	    <link rel="stylesheet" type="text/css" href="css/register.min.css"/>
+		<title>量格购</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				createCode();
+			}
+		</script>
+	</head>
+	<body id="maodian">
+		
+
+	<!--导航-->
+	<div id="top">
+	   <div id="daohang">
+	      	<div id="dao1">
+	      	您好，欢迎来量格购  ！<a href="#">[请登录]</a>&nbsp;&nbsp;<a href="#">[免费注册]</a>
+	      	</div>
+	      	<div id="dao2">
+	      		<ul>
+	      			<li><a href="#">我的订单</a></li>
+	      			
+	      			<li class="dao201">
+	      				<a href="#" class="dao201_1"> 我的小量 </a>
+
+			      		<ul>
+			      			<li><a href="#">我的优惠券</a></li>
+			      			<li><a href="#">我的收藏夹</a></li>
+			   				<li><a href="#">商品评价</a></li>
+			   				<li><a href="#">我的私人订制</a></li>
+		      			</ul>
+	      			</li>
+	      			
+	      			<li><a href="#">帮助中心</a></li>
+	      			
+	      			<li><img src="img/0_003.png"/></li>
+	      			
+	      			<li>
+	      				<a href="#">
+	      					<span><img src="img/0_004.jpg"/>公众号</span>
+	      					<ul>
+	      						<li>
+	      							<img src="img/28c380418571c31d1d32016fc9effce4.jpg"/>
+	      						</li>
+	      					</ul>	
+	      				</a>
+	      			</li>
+	      			
+	      			<li><a href="#"><img src="img/0_005.jpg"/>&nbsp;收藏</a></li>
+	      		</ul>
+	      	</div>
+	   </div>
+	</div>	
+	
+	<!--第二行图片-->
+	<div class="tu">
+		<a href="#">
+			<img src="img/ea96e0411cd8bf7f7940bb53fbb3380b.jpg"/>
+		</a>
+	</div>
+	
+	
+	<!--搜索栏-->
+	<div id="sousuo" class="container-fluid">
+    	<div class="col-xs-3 " id="sou1"><a href="#"><img src="img/b902fe028aeb7fd9f378d5a0fd20122c.png"/></a></div>
+		  
+		  <div class="col-xs-6 " id="sou2"><input type="text" name="txt" id="txt" placeholder="Mate10" /><button id="btn">搜索</button><br>
+		  <p><a href="#">华为</a>  丨  <a href="#">牛肉丸</a>  丨   <a href="#">茶叶</a>  丨  <a href="#">华为笔记本</a>  丨 </p>
+		  </div>
+		  
+		 <div class="col-xs-1 "></div>
+		  <div class="col-xs-2 " id="sou3">
+		  	<a href="#" id="sou4">
+		  		<img src="img/0_006.png"/>购物车&nbsp; 〉
+		  		<b></b>
+		  			<!--加载中
+		  			购物车中还没有商品，赶紧选购吧-->
+		  	</a>
+		  </div>
+    </div>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".fenlei").hover(function(){
+    			$(".biao").css("display","block")
+    		},function(){
+    			$(".biao").css("display","none")
+    		})
+    	})
+    </script>
+    <!--列表栏-->
+	<div id="list">
+		<!--分类-->
+		<div class="fenlei">
+			<div class="lie">
+				所有商品分类
+			</div>
+			<div class="biao">
+				<ul>
+					<li>
+						<s class="pi1"></s><a href="#" class="pa1">手机数码</a>
+						<div class="pi1bottom" style="z-index: 100;">
+							<dl class="dl1">
+								<dt><b>相关品牌</b><br />
+						<a href="#">HUAWEI/华为</a>丨<a href="#">xiaomi/小米</a><br />
+						<a href="#">Meizu/魅族</a>丨<a href="#">OPPO/欧珀</a><br />
+						<a href="#">vivo/步步高</a>丨<a href="#">Seagate/希捷</a><br />
+						<a href="#">WD/西部数据</a></dt>
+								<dd><a href="#">手机</a></dd>
+								<dd><a href="#">移动硬盘</a></dd>
+								<dd></dd>
+								
+							</dl>
+						</div>
+					
+					
+					
+					<li>
+						<s class="pi2"></s><a href="#" class="pa1">服饰箱包</a>
+						<div class="pi2bottom" style="z-index: 100;">
+							<dl class="dl1">
+								<dt><b>相关品牌</b><br />
+						<a href="#">七巧豆</a></dt>
+								<dd><a href="#">男装</a></dd>
+								<dd><a href="#">女装</a></dd>
+								<dd></dd>
+								<dd><a href="#">内衣</a></dd>
+								<dd><a href="#">男鞋</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">女鞋</a></dd>
+								<dd><a href="#">童装</a></a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi3"></s><a href="#" class="pa1">电脑办公</a>
+						<div class="pi3bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">HUAWEI/华为</a>丨 <a href="#">xiaomi/小米</a><br />
+									<a href="#">Asus/华硕</a> 丨 <a href="#">Lenovo/联想</a><br />
+								</dt>
+								<dd><a href="#">笔记本</a></dd>
+								<dd><a href="#">平板电脑</a></dd>
+								<dd></dd>
+								
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi4"></s><a href="#" class="pa1">母婴玩具</a>
+						<div class="pi4bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									
+									<b>相关品牌</b><br />
+									<a href="#">Rluckey/乐起</a> 丨 <a href="#">Nestle/雀巢</a><br />
+									<a href="#">Wyeth/惠氏</a> 丨 <a href="#">Friso/美素佳儿</a><br />
+									<a href="#">云小卷</a>
+									
+								</dt>
+								<dd><a href="#">纸尿裤</a></dd>
+								<dd><a href="#">奶瓶</a></dd>
+								<dd></dd>
+								
+								<dd><a href="#">奶粉</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi5"></s><a href="#" class="pa1">食品酒水</a>
+						<div class="pi5bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">红派司</a>
+								</dt>
+								<dd><a href="#">茶叶</a></dd>
+								<dd><a href="#">酒</a></dd>
+								<dd></dd>
+								<dd><a href="#">面包</a></dd>
+								<dd><a href="#">零食</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">特产</a></dd>
+								<dd><a href="#">水果罐头</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi6"></s><a href="#" class="pa1">美容护肤</a>
+						<div class="pi6bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">我的蜜肌</a> 丨 <a href="#">两面针</a><br />
+								</dt>
+								<dd><a href="#">面膜</a></dd>
+								<dd><a href="#">洁面乳</a></dd>
+								<dd></dd>
+
+								<dd><a href="#">牙膏</a></dd>
+								<dd><a href="#">爽肤水</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">卸妆水</a></dd>
+								<dd><a href="#">喷雾</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">洗手液</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi7"></s><a href="#" class="pa1">家用电器</a>
+						<div class="pi7bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">xiaomi/小米</a>丨 <a href="#">SUPOR/苏泊尔</a><br />
+									<a href="#">Flyco/飞科</a> 丨 <a href="#">EVERTOP/宝丽</a><br />
+									<a href="#">LEFUS/乐芙仕</a>
+								</dt>
+								<dd><a href="#">电视</a></dd>
+								<dd><a href="#">电饭煲</a></dd>
+								<dd></dd>
+								<dd><a href="#">电磁炉</a></dd>
+								<dd><a href="#">吹风机</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">扫地机</a></dd>
+								<dd><a href="#">空气净化器</a></dd>
+								<dd></dd>
+								<dd></dd>
+								
+								<dd><a href="#">净水器</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi8"></s><a href="#" class="pa1">居家用品</a>
+						<div class="pi8bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">ZUOER/佐尔</a>
+								</dt>
+								<dd><a href="#">智能水杯</a></dd>
+								<dd><a href="#">茶具</a></dd>
+								<dd></dd>
+								<dd><a href="#">餐具</a></dd>
+								<dd><a href="#">床上用品</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">去油剂</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi9"></s><a href="#" class="pa1">汽配五金</a>
+						<div class="pi9bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">瑞世泰</a>
+								</dt>
+								<dd><a href="#">记录仪</a></dd>
+								<dd></dd>
+								<dd></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi10"></s><a href="#" class="pa1">运动户外</a>
+						<div class="pi10bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">悦贝</a>
+								</dt>
+								<dd><a href="#">跑步机</a></dd>
+								<dd><a href="#">平衡车</a></dd>
+								<dd></dd>	
+							</dl>
+						</div>
+					</li>
+					
+					
+				</ul>
+				
+			</div>
+		</div>
+		<div class="fenleft">
+			<a href="index.html">首页</a>
+			<a href="#">会员中心</a>
+			<a href="#">品牌区</a>
+			<a href="#">帮助中心</a>
+			<a href="#">关于我们</a>
+		</div>
+		
+
+	</div>
+	<div class="center">
+		<div class="cen">
+			<div class="cenright">
+				<div class="you1">
+					<p>用户登录</p>
+				</div>
+				<form action="" method="post" class="you2" style="position: relative;">
+					
+					<p style="height:40px;">
+						<input type="text" name="txt1" id="txt1" placeholder="用户名/邮箱地址/手机号" /><br />
+					<b id="zhanghao" style="display: none;">请输入正确的用户名/邮箱地址/手机号</b>
+					</p>
+					<p style="height:40px;">
+						<input type="password" name="pad" id="pad" placeholder="填写密码" /><br />
+						<b id="mima" style="display: none;">请填写正确的密码</b>
+					</p>
+					<input type="txt" name="txt2" id="txt2" placeholder="填写验证码" /><br />
+					<input type="text"id="code" style="display: block; width:80px;height:30px; background:#fff; position: absolute; left:90px; top:130px;border:1px solid #f00; " onclick="createCode()"/>
+					<a href="#" id="kan" style="padding-left: 80px;" onclick="createCode()">看不清楚?换一个</a><br />
+					<b id="yanzheng" style="display: none;">请输入正确的验证码</b>
+					<script type="text/javascript">
+						var oTxt1 = document.getElementById("txt1");
+						var oPad = document.getElementById("pad");
+						var oB1 = document.getElementById("zhanghao");
+						var oB2 = document.getElementById("mima");
+						var oB3 = document.getElementById("yanzheng");
+						oTxt1.onblur =function(){
+							let rel = /^[\u4E00-\u9FA5A-Za-z0-9]{2,20}$/ || /^\w+([-+.]\w+)@\w+([-.]\w+).\w+([-.]\w+)*$/ || /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+							var str = oTxt1.value;
+							if(!rel.test(str)){
+								oB1.style.display = 'block';
+							}else{
+								oB1.style.display = 'none';
+							}
+						}
+						oPad.onblur = function(){
+							let rel = /^[\u4E00-\u9FA5A-Za-z0-9_]+$/;
+							var str = oPad.value;
+							if(!rel.test(str)){
+								oB2.style.display = 'block';
+							}else{
+								oB2.style.display = 'none';
+							}
+						}
+						
+
+							var codeV = document.getElementById("code")
+							   	function createCode(){
+					        //首先默认code为空字符串
+						        code = '';
+						        //设置长度，这里看需求，我这里设置了4
+						        var codeLength = 4;       
+						        //设置随机字符
+						        var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z');
+						        //循环codeLength 我设置的4就是循环4次
+						        for(var i = 0; i < codeLength; i++){
+						            //设置随机数范围,这设置为0 ~ 6
+						             var index = Math.floor(Math.random()*36);
+						             //字符串拼接 将每次随机的字符 进行拼接
+						             code += random[index]; 
+						        }
+						        //将拼接好的字符串赋值给展示的Value
+						        codeV.value = code;
+						    }
+					</script>
+					<p class="p1"><input type="checkbox" id="cbx1">记住账号<input type="checkbox" id="cbx2">两周内自动登录</p>
+					<p class="p2"><input type="button" name="btn" id="btn" value="登录" /><a href="#">忘记密码？</a></p>
+				</form>
+				<div class="you3">
+					<div class="you3_1">
+						<p>合作网站账号登录</p>
+						<a href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=juBiL9Tpweoj1yj97Hag0vEW&redirect_uri=http%3A%2F%2Fwww.ecopen.cn%2Ftransfer%2Fbaidu%2Ftoken&state=eyJhcHBpZCI6IjEwNzQzMjMwMzYiLCJyZWRpcmVjdF91cmwiOiJodHRwOlwvXC93d3cuZWNvcGVuLmNuXC90cmFuc2ZlclwvYmFpZHVcL3Rva2VuIiwidmVyaWZ5IjpmYWxzZX0%7E"><img src="img/baidu.jpg"/></a>
+						<a href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D17aa1f126f62d79df3605d39603d4064"><img src="img/zhifubao.png"/></a>
+						<a href="#"><img src="img/taobao.jpg"/></a>
+						<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=100278270&redirect_uri=http%3A%2F%2Fwww.ecopen.cn%2Ftransfer%2Fqzone%2Ftoken&state=eyJhcHBpZCI6IjEwNzQzMjMwMzYiLCJyZWRpcmVjdF91cmwiOiJodHRwOlwvXC93d3cuZWNvcGVuLmNuXC90cmFuc2ZlclwvcXpvbmVcL3Rva2VuIiwidmVyaWZ5IjpmYWxzZX0%7E&scope=get_user_info%2Cget_info%2Cadd_share"><img src="img/qq.jpg"/></a>
+						<a href="https://api.weibo.com/oauth2/authorize?response_type=code&client_id=4164090640&redirect_uri=http%3A%2F%2Fwww.ecopen.cn%2Ftransfer%2Fsina%2Ftoken&state=eyJhcHBpZCI6IjEwNzQzMjMwMzYiLCJyZWRpcmVjdF91cmwiOiJodHRwOlwvXC93d3cuZWNvcGVuLmNuXC90cmFuc2Zlclwvc2luYVwvdG9rZW4iLCJ2ZXJpZnkiOmZhbHNlfQ%7E%7E"><img src="img/xinlang.jpg"/></a>
+					</div>
+					<div class="you4">
+						<span>还不是会员？</span><input type="button" id="btn2" value="免费注册" />
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+
+		<!--十个圆型背景图-->
+	<div class="quanwei">
+			<a href="#">
+				<em class="wei1"></em>
+				<span>权威荣誉</span>
+			</a>
+			<a href="#">
+				<em class="wei2"></em>
+				<span>品牌授权</span>
+			</a>
+			<a href="#">
+				<em class="wei3"></em>
+				<span>正品保险</span>
+			</a>
+			<a href="#">
+				<em class="wei4"></em>
+				<span>诚信认证</span>
+			</a>
+			<a href="#">
+				<em class="wei5"></em>
+				<span>满79包邮</span>
+			</a>
+			<a href="#">
+				<em class="wei6"></em>
+				<span>30天退换无忧</span>
+			</a>
+			<a href="#">
+				<em class="wei7"></em>
+				<span>隐私包装</span>
+			</a>
+			<a href="#">
+				<em class="wei8"></em>
+				<span>金牌商家</span>
+			</a>
+			<a href="#">
+				<em class="wei9"></em>
+				<span>货到付款</span>
+			</a>
+			<a href="#">
+				<em class="wei10"></em>
+				<span>健康管家</span>
+			</a>
+	</div>
+	
+	
+<!--末尾新手上路-->
+	<div class="xinshou">
+		<div class="xin">
+			<ul>
+				<li>
+					<h5><a href="#">新手上路</a></h5>
+					<p><a href="#">积分抵现</a></p>
+				</li>
+				<li>
+					<h5><a href="#">购物指南</a></h5>
+					<p><a href="#">优惠券介绍</a></p>
+					<p><a href="#">订单说明</a></p>
+					<p><a href="#">价格保护</a></p>
+					<p><a href="#">会员权益</a></p>
+				</li>
+				<li>
+					<h5><a href="#">支付/配送方式</a></h5>
+					<p><a href="#">在线支付</a></p>
+					<p><a href="#">预存款</a></p>
+					<p><a href="#">物流配送</a></p>
+				</li>
+				<li>
+					<h5><a href="#">售后服务</a></h5>
+					<p><a href="#">退换货流程</a></p>
+				</li>
+				<li>
+					<h5><a href="#">公司简介</a></h5>
+					<p><a href="#">关于我们</a></p>
+					<p><a href="#">联系我们</a></p>
+					<p><a href="#">招聘信息</a></p>
+					<p><a href="#">业务合作</a></p>
+				</li>
+				<li></li>
+				<li>
+					<h5><a href="#"><img src="img/af7a5f5bec3aa4f31e35214cee1b8551.jpg"/></a></h5>
+					<p>微信公众号</p>
+				</li>
+				<li>
+					<h5><a href="#"><img src="img/b349e0d92536bb3c1da2583fd96bfd60.jpg"/></a></h5>
+					<p>支付宝服务窗</p>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".xinshou a").hover(function(){
+					$(this).css("color","#fff")
+				})
+			})
+		</script>
+	</div>
+
+	<div class="bottom_a">
+		<div class="bom">
+			<ul>
+				<li><a href="#">网购论坛</a></li>
+				<li><a href="#">欧洲代购</a></li>
+				<li><a href="#">就爱点评网</a></li>
+				<li><a href="#">吃宝儿</a></li>
+				<li><a href="#">Merinomink美利奴</a></li>
+				<li><a href="#">皮带批发</a></li>
+				<li><a href="#">天润博客</a></li>
+				<li><a href="#">去广告插件</a></li>
+				<li><a href="#">量格视频</a></li>
+				<li><a href="#">天天飞通航产业平台</a></li>
+				<li><a href="#">量格音乐</a></li>
+				<li><a href="#">贵阳网站优化</a></li>
+				<li><a href="#">创意新奇趣</a></li>
+				<li><a href="#">米秀街</a></li>
+				<li><a href="#">中国特价网</a></li>
+				<li><a href="#">3d全息展示柜</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--bottom-->
+	<div class="bottom">
+		© 2018 All rights reserved   有任何购物问题请联系我们在线客服 | 电话：13157632491 | 工作时间：周一至周五 8:00－18:00  粤ICP备16005068 
+	</div>
+	<!--锚点-->
+	<div class="maodian">
+		<div class="mao1">
+			<a href="#"></a>
+		</div>
+		<div class="mao2">
+			<a href="#">
+				<em>购物车</em>
+			</a>
+		</div>
+		<div class="mao3">
+			<a href="#">
+				<em>用户反馈</em>
+			</a>
+		</div>
+		<div class="mao4">
+			<a href="#maodian">
+				<em>返回顶部</em>
+			</a>
+		</div>
+	</div>
+	
+	</body>
+</html>

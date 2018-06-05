@@ -10,14 +10,14 @@
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body id="maodian">
 		
 
 	<!--导航-->
 	<div id="top">
 	   <div id="daohang">
 	      	<div id="dao1">
-	      	您好，欢迎来量格购  ！<a href="#">[请登录]</a>&nbsp;&nbsp;<a href="#">[免费注册]</a>
+	      	您好，欢迎来量格购  ！<a href="register.html">[请登录]</a>&nbsp;&nbsp;<a href="#">[免费注册]</a>
 	      	</div>
 	      	<div id="dao2">
 	      		<ul>
@@ -65,7 +65,7 @@
 	
 	<!--搜索栏-->
 	<div id="sousuo" class="container-fluid">
-    	<div class="col-xs-3 " id="sou1"><img src="img/b902fe028aeb7fd9f378d5a0fd20122c.png"/></div>
+    	<div class="col-xs-3 " id="sou1"><a href="#"><img src="img/b902fe028aeb7fd9f378d5a0fd20122c.png"/></a></div>
 		  
 		  <div class="col-xs-6 " id="sou2"><input type="text" name="txt" id="txt" placeholder="Mate10" /><button id="btn">搜索</button><br>
 		  <p><a href="#">华为</a>  丨  <a href="#">牛肉丸</a>  丨   <a href="#">茶叶</a>  丨  <a href="#">华为笔记本</a>  丨 </p>
@@ -98,7 +98,10 @@
 	<div class="lunbo">
 		<ul>
 			<li>
-				<a href="#">手机数码</a>
+				<s id="shou1"></s>
+				<a href="#">
+					<span>手机数码</span>
+				</a>
 
 				<ol id="lie1">
 					<li><a href="#">手机</a></li>
@@ -114,7 +117,10 @@
 				</ol>
 			</li>
 			<li>
-				<a href="#">服饰箱包</a>
+				<s id="shou2"></s>
+				<a href="#">
+					<span>服饰箱包</span>
+				</a>
 				<ol id="lie2">
 					<li><a href="#">男装</a></li>
 					<li><a href="#">女装</a></li>
@@ -137,7 +143,10 @@
 			</li>
 			
 			<li>
-				<a href="#">电脑办公</a>
+				<s id="shou3"></s>
+				<a href="#">
+					<span>电脑办公</span>
+				</a>
 				<ol id="lie3">
 					<li><a href="#">笔记本</a></li>
 					<li><a href="#">平板电脑</a></li>
@@ -150,7 +159,10 @@
 				</ol>
 			</li>
 			<li>
-				<a href="#">母婴玩具</a>
+				<s id="shou4"></s>
+				<a href="#">
+					<span>母婴玩具</span>
+				</a>
 				<ol id="lie4">
 					<li><a href="#">纸尿裤</a></li>
 					<li><a href="#">奶瓶</a></li>
@@ -167,7 +179,10 @@
 				</ol>
 			</li>
 			<li>
-				<a href="#">食品酒水</a>
+				<s id="shou5"></s>
+				<a href="#">
+					<span>食品酒水</span>
+				</a>
 				<ol id="lie5">
 					<li><a href="#">茶叶</a></li>
 					<li><a href="#">酒</a></li>
@@ -188,7 +203,10 @@
 			</li>
 			
 			<li>
-				<a href="#">美容护肤</a>
+				<s id="shou6"></s>
+				<a href="#">
+					<span>美容护肤</span>
+				</a>
 				<ol id="lie6">
 					<li><a href="#">面膜</a></li>
 					<li><a href="#">洁面乳</a></li>
@@ -210,7 +228,10 @@
 			</li>
 			
 			<li>
-				<a href="#">家用电器</a>
+				<s id="shou7"></s>
+				<a href="#">
+					<span>家用电器</span>
+				</a>
 				<ol id="lie7">
 					<li><a href="#">电视</a></li>
 					<li><a href="#">电饭煲</a></li>
@@ -234,7 +255,10 @@
 			</li>
 			
 			<li>
-				<a href="#">居家用品</a>
+				<s id="shou8"></s>
+				<a href="#">
+					<span>居家用品</span>
+				</a>
 				<ol id="lie8">
 					<li><a href="#">智能水杯</a></li>
 					<li><a href="#">茶具</a></li>
@@ -253,7 +277,10 @@
 			</li>
 			
 			<li>
-				<a href="#">汽配五金</a>
+				<s id="shou9"></s>
+				<a href="#">
+					<span>汽配五金</span>
+				</a>
 				<ol id="lie9">
 					<li><a href="#">记录仪</a></li>
 					<li></li>
@@ -266,7 +293,10 @@
 			</li>
 			
 			<li>
-				<a href="#">运动户外</a>
+				<s id="shou10"></s>
+				<a href="#">
+					<span>运动户外</span>
+				</a>
 				<ol id="lie10">
 					<li><a href="#">跑步机</a></li>
 					<li><a href="#">平衡车</a></li>
@@ -329,6 +359,15 @@
 				<em class="em1"></em>
 				<span>权威荣誉</span>
 			</a>
+			<script type="text/javascript">
+//				$("lun_right2 a").hover(function(){
+//					  	$("em1").animate("margin-bottom","5px");
+//					},200 function(){
+//						$("em1").animate("margin-bottom","-5px");
+//					});
+//					
+					
+			</script>
 			<a href="#">
 				<em class="em2"></em>
 				<span>品牌授权</span>
@@ -370,7 +409,10 @@
 <!--今日限购-->
 	<div class="shop">
 		<div class="shop_left">
-			<img src="img/clock01.png"/>
+			<div class="biao1"></div>
+			<div class="biao2"></div>
+			<div class="biao3"></div>
+			<div class="biao4"></div>
 		</div>
 		<div class="shou_img">
 			<a href="#"><img src="img/83101f8002821cf67b6c47409be2d287.jpg"/></a>
@@ -605,8 +647,7 @@
 			})
 		</script>
 	</div>
-	
-	
+
 	<div class="bottom_a">
 		<div class="bom">
 			<ul>
@@ -629,9 +670,31 @@
 			</ul>
 		</div>
 	</div>
-	
+	<!--bottom-->
 	<div class="bottom">
 		© 2018 All rights reserved   有任何购物问题请联系我们在线客服 | 电话：13157632491 | 工作时间：周一至周五 8:00－18:00  粤ICP备16005068 
 	</div>
+	<!--锚点-->
+	<div class="maodian">
+		<div class="mao1">
+			<a href="#"></a>
+		</div>
+		<div class="mao2">
+			<a href="#">
+				<em>购物车</em>
+			</a>
+		</div>
+		<div class="mao3">
+			<a href="#">
+				<em>用户反馈</em>
+			</a>
+		</div>
+		<div class="mao4">
+			<a href="#maodian">
+				<em>返回顶部</em>
+			</a>
+		</div>
+	</div>
+
 	</body>
 </html>
