@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Example of Fluid Layout with Bootstrap version 2.0 from w3cschool.cc">
+	    <link rel="stylesheet" type="text/css" href="css/detail.min.css"/>
+		<title>量格购</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+	</head>
+	<body id="maodian">
+		
+
+	<!--导航-->
+	<div id="top">
+	   <div id="daohang">
+	      	<div id="dao1">
+	      	您好，欢迎来量格购  ！<a href="register.html">[请登录]</a>&nbsp;&nbsp;<a href="register1.html">[免费注册]</a>
+	      	</div>
+	      	<div id="dao2">
+	      		<ul>
+	      			<li><a href="#">我的订单</a></li>
+	      			
+	      			<li class="dao201">
+	      				<a href="#" class="dao201_1"> 我的小量 </a>
+
+			      		<ul>
+			      			<li><a href="#">我的优惠券</a></li>
+			      			<li><a href="#">我的收藏夹</a></li>
+			   				<li><a href="#">商品评价</a></li>
+			   				<li><a href="#">我的私人订制</a></li>
+		      			</ul>
+	      			</li>
+	      			
+	      			<li><a href="#">帮助中心</a></li>
+	      			
+	      			<li><img src="img/0_003.png"/></li>
+	      			
+	      			<li>
+	      				<a href="#">
+	      					<span><img src="img/0_004.jpg"/>公众号</span>
+	      					<ul>
+	      						<li>
+	      							<img src="img/28c380418571c31d1d32016fc9effce4.jpg"/>
+	      						</li>
+	      					</ul>	
+	      				</a>
+	      			</li>
+	      			
+	      			<li><a href="#"><img src="img/sc.png"/>&nbsp;收藏</a></li>
+	      		</ul>
+	      	</div>
+	   </div>
+	</div>	
+	
+	<!--第二行图片-->
+	<div class="tu">
+		<a href="#">
+			<img src="img/ea96e0411cd8bf7f7940bb53fbb3380b.jpg"/>
+		</a>
+	</div>
+	
+	
+	<!--搜索栏-->
+	<div id="sousuo" class="container-fluid">
+    	<div class="col-xs-3 " id="sou1"><a href="#"><img src="img/b902fe028aeb7fd9f378d5a0fd20122c.png"/></a></div>
+		  
+		  <div class="col-xs-6 " id="sou2"><input type="text" name="txt" id="txt" placeholder="Mate10" /><button id="btn">搜索</button><br>
+		  <p><a href="#">华为</a>  丨  <a href="#">牛肉丸</a>  丨   <a href="#">茶叶</a>  丨  <a href="#">华为笔记本</a>  丨 </p>
+		  </div>
+		  
+		 <div class="col-xs-1 "></div>
+		  <div class="col-xs-2 " id="sou3">
+		  	<a href="#" id="sou4">
+		  		<img src="img/0_006.png"/>购物车&nbsp; 〉
+		  		<b></b>
+		  			<!--加载中
+		  			购物车中还没有商品，赶紧选购吧-->
+		  	</a>
+		  </div>
+    </div>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".fenlei").hover(function(){
+    			$(".biao").css("display","block")
+    		},function(){
+    			$(".biao").css("display","none")
+    		})
+    	})
+    </script>
+    <!--列表栏-->
+	<div id="list">
+		<!--分类-->
+		<div class="fenlei">
+			<div class="lie">
+				所有商品分类
+			</div>
+			<div class="biao">
+				<ul>
+					<li>
+						<s class="pi1"></s><a href="#" class="pa1">手机数码</a>
+						<div class="pi1bottom" style="z-index: 100;">
+							<dl class="dl1">
+								<dt><b>相关品牌</b><br />
+						<a href="#">HUAWEI/华为</a>丨<a href="#">xiaomi/小米</a><br />
+						<a href="#">Meizu/魅族</a>丨<a href="#">OPPO/欧珀</a><br />
+						<a href="#">vivo/步步高</a>丨<a href="#">Seagate/希捷</a><br />
+						<a href="#">WD/西部数据</a></dt>
+								<dd><a href="#">手机</a></dd>
+								<dd><a href="#">移动硬盘</a></dd>
+								<dd></dd>
+								
+							</dl>
+						</div>
+					
+					
+					
+					<li>
+						<s class="pi2"></s><a href="#" class="pa1">服饰箱包</a>
+						<div class="pi2bottom" style="z-index: 100;">
+							<dl class="dl1">
+								<dt><b>相关品牌</b><br />
+						<a href="#">七巧豆</a></dt>
+								<dd><a href="#">男装</a></dd>
+								<dd><a href="#">女装</a></dd>
+								<dd></dd>
+								<dd><a href="#">内衣</a></dd>
+								<dd><a href="#">男鞋</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">女鞋</a></dd>
+								<dd><a href="#">童装</a></a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi3"></s><a href="#" class="pa1">电脑办公</a>
+						<div class="pi3bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">HUAWEI/华为</a>丨 <a href="#">xiaomi/小米</a><br />
+									<a href="#">Asus/华硕</a> 丨 <a href="#">Lenovo/联想</a><br />
+								</dt>
+								<dd><a href="#">笔记本</a></dd>
+								<dd><a href="#">平板电脑</a></dd>
+								<dd></dd>
+								
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi4"></s><a href="#" class="pa1">母婴玩具</a>
+						<div class="pi4bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									
+									<b>相关品牌</b><br />
+									<a href="#">Rluckey/乐起</a> 丨 <a href="#">Nestle/雀巢</a><br />
+									<a href="#">Wyeth/惠氏</a> 丨 <a href="#">Friso/美素佳儿</a><br />
+									<a href="#">云小卷</a>
+									
+								</dt>
+								<dd><a href="#">纸尿裤</a></dd>
+								<dd><a href="#">奶瓶</a></dd>
+								<dd></dd>
+								
+								<dd><a href="#">奶粉</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi5"></s><a href="#" class="pa1">食品酒水</a>
+						<div class="pi5bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">红派司</a>
+								</dt>
+								<dd><a href="#">茶叶</a></dd>
+								<dd><a href="#">酒</a></dd>
+								<dd></dd>
+								<dd><a href="#">面包</a></dd>
+								<dd><a href="#">零食</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">特产</a></dd>
+								<dd><a href="#">水果罐头</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi6"></s><a href="#" class="pa1">美容护肤</a>
+						<div class="pi6bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">我的蜜肌</a> 丨 <a href="#">两面针</a><br />
+								</dt>
+								<dd><a href="#">面膜</a></dd>
+								<dd><a href="#">洁面乳</a></dd>
+								<dd></dd>
+
+								<dd><a href="#">牙膏</a></dd>
+								<dd><a href="#">爽肤水</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">卸妆水</a></dd>
+								<dd><a href="#">喷雾</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">洗手液</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi7"></s><a href="#" class="pa1">家用电器</a>
+						<div class="pi7bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">xiaomi/小米</a>丨 <a href="#">SUPOR/苏泊尔</a><br />
+									<a href="#">Flyco/飞科</a> 丨 <a href="#">EVERTOP/宝丽</a><br />
+									<a href="#">LEFUS/乐芙仕</a>
+								</dt>
+								<dd><a href="#">电视</a></dd>
+								<dd><a href="#">电饭煲</a></dd>
+								<dd></dd>
+								<dd><a href="#">电磁炉</a></dd>
+								<dd><a href="#">吹风机</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">扫地机</a></dd>
+								<dd><a href="#">空气净化器</a></dd>
+								<dd></dd>
+								<dd></dd>
+								
+								<dd><a href="#">净水器</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi8"></s><a href="#" class="pa1">居家用品</a>
+						<div class="pi8bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">ZUOER/佐尔</a>
+								</dt>
+								<dd><a href="#">智能水杯</a></dd>
+								<dd><a href="#">茶具</a></dd>
+								<dd></dd>
+								<dd><a href="#">餐具</a></dd>
+								<dd><a href="#">床上用品</a></dd>
+								<dd></dd>
+								<dd></dd>
+								<dd><a href="#">去油剂</a></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi9"></s><a href="#" class="pa1">汽配五金</a>
+						<div class="pi9bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">瑞世泰</a>
+								</dt>
+								<dd><a href="#">记录仪</a></dd>
+								<dd></dd>
+								<dd></dd>
+							</dl>
+						</div>
+					</li>
+					
+					
+					<li>
+						<s class="pi10"></s><a href="#" class="pa1">运动户外</a>
+						<div class="pi10bottom" style="z-index: 100;">
+							<dl>
+								<dt>
+									<b>相关品牌</b><br />
+									<a href="#">悦贝</a>
+								</dt>
+								<dd><a href="#">跑步机</a></dd>
+								<dd><a href="#">平衡车</a></dd>
+								<dd></dd>	
+							</dl>
+						</div>
+					</li>
+					
+					
+				</ul>
+				
+			</div>
+		</div>
+		<div class="fenleft">
+			<a href="index.html">首页</a>
+			<a href="#">会员中心</a>
+			<a href="#">品牌区</a>
+			<a href="#">帮助中心</a>
+			<a href="#">关于我们</a>
+		</div>
+		
+
+	</div>
+	
+	
+	<div class="cen_top">
+		<img src="img/detail.jpg/yw_home.png"/>
+		<a href="#">首页</a>
+		<span>></span>
+		<a href="#">手机数码</a>
+		<span>></span>
+		手机
+	</div>
+	<div class="cen_bottom">
+		<div class="bom_left">
+			<a href="#" class="shuma">手机数码</a>
+			<h6>手机</h6>
+			<h5>移动硬盘</h5>
+			<div class="left_1">
+				<a href="#" class="mai">热卖商品</a>
+				<img src="img/detail.jpg/2a6f594a4108216c569a2dbdd4accd72(2).jpg" style="width:150px; height:150px;"/>
+				<a href="#" class="hua1">
+Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待
+				</a>
+				<span style="font-weight: bold; color:red">￥5588.00</span>￥5588.00
+				
+				<img src="img/detail.jpg/eaa52a39379fc3a1d2d2ed5cf4111f0e.jpg" style="width:150px; height:150px;"/>
+				<a href="#" class="hua1">
+Huawei/华为 畅享8 Plus 高清全网通移动联通电信4G手机双
+				</a>
+				<span style="font-weight: bold; color:red">￥1699.00</span>￥1699.00
+				
+				<img src="img/detail.jpg/ef0cd430c1022fdf4f795e6e2876ad2d.jpg" style="width:150px; height:150px;"/>
+				<a href="#" class="hua1">
+我的蜜肌 凝润补水保湿爽肤水
+				</a>
+				<span style="font-weight: bold; color:red">￥29.00</span>￥29.00
+				
+				<img src="img/detail.jpg/92ec7cc094f59f2115683a1b4fe9b407.jpg" style="width:150px; height:150px;"/>
+				<a href="#" class="hua1">
+潮汕特产虾丸 清蒸深海虾滑火锅食材500g/包
+				</a>
+				<span style="font-weight: bold; color:red">￥69.00</span>￥69.00
+				
+				<img src="img/detail.jpg/f3923df5a9c6d4cd5193b874028b9aa7.jpg" style="width:150px; height:150px;"/>
+				<a href="#" class="hua1">
+中华名小吃 潮汕手工鱼皮饺500g
+				</a>
+				<span style="font-weight: bold; color:red">￥65.00</span>￥65.00
+			</div>
+			<div class="left_2">
+				<a href="#" class="lan">浏览过的商品</a>
+				<img src="img/detail.jpg/2a6f594a4108216c569a2dbdd4accd72(2).jpg"/ style="width:70px; height:70px;">刚才浏览了:
+				<a href="#">Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待</a><br />
+				<img src="img/detail.jpg/eaa52a39379fc3a1d2d2ed5cf4111f0e.jpg"/ style="width:70px; height:70px;">刚才浏览了:
+				<a href="#">Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待</a>
+				<a href="#" class="qing">清除列表</a>
+			</div>
+		</div>
+		<div class="bom_right">
+			<div class="rht1">
+				<p class="rht1_1">
+					<span><b>商品筛选</b>(共23件商品)</span>
+					<a href="#">重置筛选项<b>></b></a>
+				</p>
+				<p class="rht1_2">
+					<span>您已选择：</span>
+				</p>
+				<p class="rht1_3" style="margin-left: 10px;">
+					<span>品牌：</span> <a href="#">不限</a> <a href="#">HUAWEI华为</a><a href="#">xiaomi</a><a href="#">小米 OPPO</a><a href="#">欧珀 Meizu</a><a href="#">魅族 vivo</a><a href="#">步步高</a>
+				</p>
+				<p class="rht1_4" style="margin-left: 10px;">
+					       
+					<span>价格：</span> <a href="#">不限</a> <a href="#">0-500元</a><a href="#">500-1000元</a><a href="#">1000-1999元</a><a href="#">2000-2999元 </a><a href="#">3000-3999元</a><a href="#">4000-5999元</a><a href="#">6000-10000元</a>
+				</p>
+			</div>
+			<div class="rht2">
+				<p class="rht2_1">
+					<button>默认</button>
+					<button>价格&darr;</button>
+					<button>销量&darr;</button>
+					排序：
+					<select>
+                    <option>默认</option>
+                    <option>按价格 从高到低</option>
+                    <option>按价格 从低到高</option>
+                    <option>访问周次数</option>
+                    <option>总访问次数</option>
+                    <option>周购买次数</option>
+                    <option>总购买次数</option>
+                    <option>评论次数</option>
+                  </select>
+                  	<a href="#" style="">大图</a>
+                  	<a href="#">列表</a>
+                  	<input type="checkbox" />仅显示有货
+				</p>
+				   &nbsp;&nbsp;筛选:
+			</div>
+			<div class="rht3">
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/ff85c0f17ca360195d75713eadb9c7a2.jpg"/></a></li>
+					<li style="height:50px;">华为honor/荣耀 荣耀10智能拍照AI手机</li>
+					<li>￥3199.00 暂无评论</li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but40">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but39">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/2a6f594a4108216c569a2dbdd4accd72.jpg"/></a></li>
+					<li style="height:50px;">Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待</li>
+					<li> ￥5588.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but38">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but37">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/eaa52a39379fc3a1d2d2ed5cf4111f0e.jpg"/></a></li>
+					<li style="height:50px;">Huawei/华为 畅享8 Plus 高清全网通移动联通电信4G手机双卡双待</li>
+					<li> ￥1699.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but36">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but35">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/4314764b895036b3fd6c8bddbe16fdcb.jpg"/></a></li>
+					<li style="height:50px;">Xiaomi/小米6X高配版 双摄拍照全面屏新品手机正品</li>
+					<li> ￥2099.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but34">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but33">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/6c3e4f9bca9e920e73ae5c8927b65dac.jpg"/></a></li>
+					<li style="height:50px;">现货速发 华为honor/荣耀 荣耀9青春版高配版全网通全面屏4G手机</li>
+					<li> ￥1399.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but32">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but31">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/33f4603ca18bc4bf055f4821a2c47158.jpg"/></a></li>
+					<li style="height:50px;">Meizu/魅族 魅蓝 E3 全面屏全网通手机</li>
+					<li> ￥2059.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but30">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but29">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/c10cc28831e64645a0c2fbcba204250c.jpg"/></a></li>
+					<li style="height:50px;">Huawei/华为 Mate 10手机pro旗舰店</li>
+					<li> ￥4199.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but28">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but27">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/8266527ca06eda45a45bb57baabdefdf.jpg"/></a></li>
+					<li style="height:50px;">Huawei/华为 Mate RS 保时捷设计版 全网通4G智能手机</li>
+					<li> ￥10988.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but26">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but25">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/eec88bf6123363ac4ab1bbed42ac7a43.jpg"/></a></li>
+					<li style="height:50px;">华为 honor/荣耀 荣耀V10高配版 移动联通电信4G全面屏游戏手机 双卡双待</li>
+					<li> ￥2759.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but24">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but23">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/c08cbb600c09733c9dca04350a817745.jpg"/></a></li>
+					<li style="height:50px;">【新品优惠】OPPO R15 超视野全面屏 智能拍照4G手机</li>
+					<li> ￥2999.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but22">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but21">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/20c280ecb302c3374186a4f48e0b7733.jpg"/></a></li>
+					<li style="height:50px;">【新品优惠】vivo X21全面屏智能全网通4G手机全新正品vivox21</li>
+					<li> ￥3198.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but20">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but19">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/7564287ffb47f74dd505afac9cf9403a.jpg"/></a></li>
+					<li style="height:50px;">Meizu/魅族 PRO 7 双屏双摄全网通4G拍照手机pro7</li>
+					<li> ￥2399.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but18">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but17">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/5845a5ba6de81d5d8ea981beb66843ba.jpg"/></a></li>
+					<li style="height:50px;">现货送百元礼/Huawei/华为 nova 3e手机3e全面屏4G手机</li>
+					<li> ￥2399.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but16">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but15">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/4785d439aa13de9bb0ac365718f68220.jpg"/></a></li>
+					<li style="height:50px;">OPPO A73高配版 超清全面屏前置1600万拍照4G手机</li>
+					<li> ￥1799.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but14">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but13">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/7bd732d82631af3360e6dec7ae5d14b3.jpg"/></a></li>
+					<li style="height:50px;">vivo Y79全面屏智能4G手机全网通面部识别</li>
+					<li> ￥1998.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but12">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but11">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/6c45b577fef0977355d97fd8ee824b34.jpg"/></a></li>
+					<li style="height:50px;">Xiaomi/小米 小米手机6全网通手机</li>
+					<li>  ￥2645.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but10">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but9">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/a1b901cc15458afdeb8407dcba5e0a7f.jpg"/></a></li>
+					<li style="height:50px;">Xiaomi/小米 红米手机5面屏手机 3G运存</li>
+					<li> ￥979.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but8">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but7">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/a5cbff3063aac6f4edef316afd85f837.jpg"/></a></li>
+					<li style="height:50px;">Meizu/魅族 魅蓝Note6全网通64G手机</li>
+					<li> ￥1259.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but6">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but5">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/039676d2b77427cca98c8751b7054c47.png"/></a></li>
+					<li style="height:50px;">Meizu/魅族 魅蓝 S6 全面屏4G手机全网通</li>
+					<li> ￥1199.00 暂无评论 </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but4">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff" class="but3">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+				</ul>
+				<ul>
+					<li><a href="#"><img src="img/detail.jpg/fa39664788c7fc3572cbc85d6ef37b85.jpg"/></a></li>
+					<li style="height:50px;">步步高vivo X9 前置2000万双摄全网通4G智能手机</li>
+					<li> ￥2398.00 暂无评论  </li>
+					<li>
+						<button style="width:30px; border: 1px solid #DDDDDD; background:#fff; " class="but1">-</button><input type="text" id="" value="1" style="width:30px; border: 1px solid #DDDDDD; text-align: center;"/><button style="width:30px; border: 1px solid #DDDDDD; background:#fff; " class="but2">+</button>
+						<button style="background:#F25C15; color:#fff; border: #F25C15 1px solid;">加入购物车</button></li>
+					<li><button style="border: 1px solid #DDDDDD;">收藏</button></li>
+					<script type="text/javascript">
+						$(function(){
+							$(".but1").hover(function(){
+								$(".but1").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but1").css({"background":"#fff","color":"#000"})
+							})
+							$(".but2").hover(function(){
+								$(".but2").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but2").css({"background":"#fff","color":"#000"})
+							})
+							$(".but3").hover(function(){
+								$(".but3").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but3").css({"background":"#fff","color":"#000"})
+							})
+							$(".but4").hover(function(){
+								$(".but4").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but4").css({"background":"#fff","color":"#000"})
+							})
+							$(".but5").hover(function(){
+								$(".but5").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but5").css({"background":"#fff","color":"#000"})
+							})
+							$(".but6").hover(function(){
+								$(".but6").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but6").css({"background":"#fff","color":"#000"})
+							})
+							$(".but7").hover(function(){
+								$(".but7").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but7").css({"background":"#fff","color":"#000"})
+							})
+							$(".but8").hover(function(){
+								$(".but8").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but8").css({"background":"#fff","color":"#000"})
+							})
+							$(".but9").hover(function(){
+								$(".but9").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but9").css({"background":"#fff","color":"#000"})
+							})
+							$(".but10").hover(function(){
+								$(".but10").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but10").css({"background":"#fff","color":"#000"})
+							})
+							$(".but11").hover(function(){
+								$(".but11").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but11").css({"background":"#fff","color":"#000"})
+							})
+							$(".but12").hover(function(){
+								$(".but12").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but12").css({"background":"#fff","color":"#000"})
+							})
+							$(".but13").hover(function(){
+								$(".but13").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but13").css({"background":"#fff","color":"#000"})
+							})
+							$(".but14").hover(function(){
+								$(".but14").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but14").css({"background":"#fff","color":"#000"})
+							})
+							$(".but15").hover(function(){
+								$(".but15").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but15").css({"background":"#fff","color":"#000"})
+							})
+							$(".but16").hover(function(){
+								$(".but16").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but16").css({"background":"#fff","color":"#000"})
+							})
+							$(".but17").hover(function(){
+								$(".but17").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but17").css({"background":"#fff","color":"#000"})
+							})
+							$(".but18").hover(function(){
+								$(".but18").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but18").css({"background":"#fff","color":"#000"})
+							})
+							$(".but19").hover(function(){
+								$(".but19").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but19").css({"background":"#fff","color":"#000"})
+							})
+							$(".but20").hover(function(){
+								$(".but20").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but20").css({"background":"#fff","color":"#000"})
+							})
+							$(".but21").hover(function(){
+								$(".but21").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but21").css({"background":"#fff","color":"#000"})
+							})
+							$(".but22").hover(function(){
+								$(".but22").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but22").css({"background":"#fff","color":"#000"})
+							})
+							$(".but23").hover(function(){
+								$(".but23").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but23").css({"background":"#fff","color":"#000"})
+							})
+							$(".but24").hover(function(){
+								$(".but24").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but24").css({"background":"#fff","color":"#000"})
+							})
+							$(".but25").hover(function(){
+								$(".but25").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but25").css({"background":"#fff","color":"#000"})
+							})
+							$(".but26").hover(function(){
+								$(".but26").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but26").css({"background":"#fff","color":"#000"})
+							})
+							$(".but27").hover(function(){
+								$(".but27").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but27").css({"background":"#fff","color":"#000"})
+							})
+							$(".but28").hover(function(){
+								$(".but28").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but28").css({"background":"#fff","color":"#000"})
+							})
+							$(".but29").hover(function(){
+								$(".but29").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but29").css({"background":"#fff","color":"#000"})
+							})
+							$(".but30").hover(function(){
+								$(".but30").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but30").css({"background":"#fff","color":"#000"})
+							})
+							$(".but31").hover(function(){
+								$(".but31").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but31").css({"background":"#fff","color":"#000"})
+							})
+							$(".but32").hover(function(){
+								$(".but32").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but32").css({"background":"#fff","color":"#000"})
+							})
+							$(".but33").hover(function(){
+								$(".but33").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but33").css({"background":"#fff","color":"#000"})
+							})
+							$(".but34").hover(function(){
+								$(".but34").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but34").css({"background":"#fff","color":"#000"})
+							})
+							$(".but35").hover(function(){
+								$(".but35").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but35").css({"background":"#fff","color":"#000"})
+							})
+							$(".but36").hover(function(){
+								$(".but36").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but36").css({"background":"#fff","color":"#000"})
+							})
+							$(".but37").hover(function(){
+								$(".but37").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but37").css({"background":"#fff","color":"#000"})
+							})
+							$(".but38").hover(function(){
+								$(".but38").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but38").css({"background":"#fff","color":"#000"})
+							})
+							$(".but39").hover(function(){
+								$(".but39").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but39").css({"background":"#fff","color":"#000"})
+							})
+							$(".but40").hover(function(){
+								$(".but40").css({"background":"#ddd","color":"#fff"})
+							},function(){
+								$(".but40").css({"background":"#fff","color":"#000"})
+							})
+						})
+					</script>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+
+		<!--十个圆型背景图-->
+	<div class="quanwei">
+			<a href="#">
+				<em class="wei1"></em>
+				<span>权威荣誉</span>
+			</a>
+			<a href="#">
+				<em class="wei2"></em>
+				<span>品牌授权</span>
+			</a>
+			<a href="#">
+				<em class="wei3"></em>
+				<span>正品保险</span>
+			</a>
+			<a href="#">
+				<em class="wei4"></em>
+				<span>诚信认证</span>
+			</a>
+			<a href="#">
+				<em class="wei5"></em>
+				<span>满79包邮</span>
+			</a>
+			<a href="#">
+				<em class="wei6"></em>
+				<span>30天退换无忧</span>
+			</a>
+			<a href="#">
+				<em class="wei7"></em>
+				<span>隐私包装</span>
+			</a>
+			<a href="#">
+				<em class="wei8"></em>
+				<span>金牌商家</span>
+			</a>
+			<a href="#">
+				<em class="wei9"></em>
+				<span>货到付款</span>
+			</a>
+			<a href="#">
+				<em class="wei10"></em>
+				<span>健康管家</span>
+			</a>
+	</div>
+	
+	
+<!--末尾新手上路-->
+	<div class="xinshou">
+		<div class="xin">
+			<ul>
+				<li>
+					<h5><a href="#">新手上路</a></h5>
+					<p><a href="#">积分抵现</a></p>
+				</li>
+				<li>
+					<h5><a href="#">购物指南</a></h5>
+					<p><a href="#">优惠券介绍</a></p>
+					<p><a href="#">订单说明</a></p>
+					<p><a href="#">价格保护</a></p>
+					<p><a href="#">会员权益</a></p>
+				</li>
+				<li>
+					<h5><a href="#">支付/配送方式</a></h5>
+					<p><a href="#">在线支付</a></p>
+					<p><a href="#">预存款</a></p>
+					<p><a href="#">物流配送</a></p>
+				</li>
+				<li>
+					<h5><a href="#">售后服务</a></h5>
+					<p><a href="#">退换货流程</a></p>
+				</li>
+				<li>
+					<h5><a href="#">公司简介</a></h5>
+					<p><a href="#">关于我们</a></p>
+					<p><a href="#">联系我们</a></p>
+					<p><a href="#">招聘信息</a></p>
+					<p><a href="#">业务合作</a></p>
+				</li>
+				<li></li>
+				<li>
+					<h5><a href="#"><img src="img/af7a5f5bec3aa4f31e35214cee1b8551.jpg"/></a></h5>
+					<p>微信公众号</p>
+				</li>
+				<li>
+					<h5><a href="#"><img src="img/b349e0d92536bb3c1da2583fd96bfd60.jpg"/></a></h5>
+					<p>支付宝服务窗</p>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".xinshou a").hover(function(){
+					$(this).css("color","#fff")
+				})
+			})
+		</script>
+	</div>
+
+	<div class="bottom_a">
+		<div class="bom">
+			<ul>
+				<li><a href="#">网购论坛</a></li>
+				<li><a href="#">欧洲代购</a></li>
+				<li><a href="#">就爱点评网</a></li>
+				<li><a href="#">吃宝儿</a></li>
+				<li><a href="#">Merinomink美利奴</a></li>
+				<li><a href="#">皮带批发</a></li>
+				<li><a href="#">天润博客</a></li>
+				<li><a href="#">去广告插件</a></li>
+				<li><a href="#">量格视频</a></li>
+				<li><a href="#">天天飞通航产业平台</a></li>
+				<li><a href="#">量格音乐</a></li>
+				<li><a href="#">贵阳网站优化</a></li>
+				<li><a href="#">创意新奇趣</a></li>
+				<li><a href="#">米秀街</a></li>
+				<li><a href="#">中国特价网</a></li>
+				<li><a href="#">3d全息展示柜</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--bottom-->
+	<div class="bottom">
+		© 2018 All rights reserved   有任何购物问题请联系我们在线客服 | 电话：13157632491 | 工作时间：周一至周五 8:00－18:00  粤ICP备16005068 <img src="img/bottom_large_img.png" style="margin-left: 60px;"/>
+	</div>
+	<!--锚点-->
+	<div class="maodian">
+		<div class="mao1">
+			<a href="#"></a>
+		</div>
+		<div class="mao2">
+			<a href="#">
+				<em>购物车</em>
+			</a>
+		</div>
+		<div class="mao3">
+			<a href="#">
+				<em>用户反馈</em>
+			</a>
+		</div>
+		<div class="mao4">
+			<a href="#maodian">
+				<em>返回顶部</em>
+			</a>
+		</div>
+	</div>
+	
+	</body>
+</html>

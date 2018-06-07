@@ -5,11 +5,32 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="description" content="Example of Fluid Layout with Bootstrap version 2.0 from w3cschool.cc">
 	    <link rel="stylesheet" type="text/css" href="css/register1.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/jcDate.min.css"/>
 		<title>量格购</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		
+		<script src="http://www.lanrenzhijia.com/ajaxjs/1.7.2/jquery-1.7.2.min.js"></script>
+		<script src="js/jQuery-jcDate.min.js"></script>
+		<script>
+		$(function (){
+			$(".jcDate").jcDate({					       
+					IcoClass : "jcDateIco",
+					Event : "click",
+					Speed : 100,
+					Left : 0,
+					Top : 28,
+					format : "-",
+					Timeout : 100
+			});
+		});
+		</script>
+		<!--代码部分end-->
+		<script type="text/javascript">
+			window.onload = function(){
+				createCode();
+			}
+		</script>
 	</head>
 	<body id="maodian">
 		
@@ -18,7 +39,7 @@
 	<div id="top">
 	   <div id="daohang">
 	      	<div id="dao1">
-	      	您好，欢迎来量格购  ！<a href="#">[请登录]</a>&nbsp;&nbsp;<a href="#">[免费注册]</a>
+	      	您好，欢迎来量格购  ！<a href="register.html">[请登录]</a>&nbsp;&nbsp;<a href="register1.html">[免费注册]</a>
 	      	</div>
 	      	<div id="dao2">
 	      		<ul>
@@ -50,7 +71,7 @@
 	      				</a>
 	      			</li>
 	      			
-	      			<li><a href="#"><img src="img/0_005.jpg"/>&nbsp;收藏</a></li>
+	      			<li><a href="#"><img src="img/sc.png"/>&nbsp;收藏</a></li>
 	      		</ul>
 	      	</div>
 	   </div>
@@ -326,25 +347,216 @@
 		<div class="cen_left">
 			<div class="cen_left_1">
 				<p>用户注册</p>
-				<p>*登录账号： <input type="" name="" id="" value="" /></p>
-				<p>*密码 ：<input type="" name="" id="" value="" /></p>
-				<p>*确认密码： <input type="" name="" id="" value="" /></p>
-				<p>*姓名： <input type="" name="" id="" value="" /></p>
+				<p>
+					*登录账号： <input type="text" id="zhanghao" placeholder="用户名/邮箱/手机号，最少四个字符" />
+					<b id="zhanghao1" style="display: none;">请输入正确的账号</b>
+				</p>
+				<p>
+					*密码 ：<input type="text" id="mima" placeholder="6-20个字符" />
+					<b id="mima1" style="display: none;">请输入正确的密码</b>
+				</p>
+				<p>
+					*确认密码： <input type="text" id="tongmi" placeholder="再次填写密码" />
+					<b id="tongmi1" style="display: none;">请输入与以上相同的密码</b>
+				</p>
+				<p>
+					*姓名： <input type="text" id="xingming" value="" />
+					<b id="xingming1" style="display: none;">请输入正确的名字</b>
+				</p>
 				
-				<p>*地区：</p>
-				<p>联系地址：</p>
-				<p>性别：</p>
-				<p>*手机：</p>
-				<p>邮编：</p>
-				<p>出生日期</p>
-			</div>
-			<div class="cen_left_2">
+				<p>
+					*地区：
+					<select name="xiala1" id="xiala1">
+						<option>请选择</option>
+						<option value="_NULL_">请选择</option>
+						<option value="1" data-level-index="0">北京</option>
+						<option value="21" data-level-index="1">上海</option>
+						<option value="42" data-level-index="2">天津</option>
+						<option value="62" data-level-index="3">重庆</option>
+						<option value="104" data-level-index="4">安徽</option>
+						<option value="227" data-level-index="5">福建</option>
+						<option value="322" data-level-index="6">甘肃</option>
+						<option value="423" data-level-index="7">广东</option>
+						<option value="566" data-level-index="8">广西</option>
+						<option value="690" data-level-index="9">贵州</option>
+						<option value="788" data-level-index="10">海南</option>
+						<option value="814" data-level-index="11">河北</option>
+						<option value="998" data-level-index="12">河南</option>
+						<option value="1176" data-level-index="13">黑龙江</option>
+						<option value="1320" data-level-index="14">湖北</option>
+						<option value="1436" data-level-index="15">湖南</option>
+						<option value="1573" data-level-index="16">吉林</option>
+						<option value="1643" data-level-index="17">江苏</option>
+						<option value="1763" data-level-index="18">江西</option>
+						<option value="1874" data-level-index="19">辽宁</option>
+						<option value="1989" data-level-index="20">内蒙古</option>
+						<option value="2103" data-level-index="21">宁夏</option>
+						<option value="2130" data-level-index="22">青海</option>
+						<option value="2182" data-level-index="23">山东</option>
+						<option value="2340" data-level-index="24">山西</option>
+						<option value="2471" data-level-index="25">陕西</option>
+						<option value="2589" data-level-index="26">四川</option>
+						<option value="2792" data-level-index="27">西藏</option>
+						<option value="2873" data-level-index="28">新疆</option>
+						<option value="2987" data-level-index="29">云南</option>
+						<option value="3133" data-level-index="30">浙江</option>
+						<option value="3235" data-level-index="31">香港</option>
+						<option value="3239" data-level-index="32">澳门</option>
+						<option value="3242" data-level-index="33">台湾</option>
+					</select>
+					<select name="xiala2" id="xiala2">
+						<option>请选择</option>
+						<option value="_NULL_">请选择</option>
+						<option value="2" data-level-index="0">北京市</option>
+					</select>
+					<select name="xiala3" id="xiala3">
+						<option>请选择</option>
+						<option value="_NULL_">请选择</option>
+						<option value="3">东城区</option>
+						<option value="4">西城区</option>
+						<option value="5">崇文区</option>
+						<option value="6">宣武区</option>
+						<option value="7">朝阳区</option>
+						<option value="8">丰台区</option>
+						<option value="9">石景山区</option>
+						<option value="10">海淀区</option>
+						<option value="11">门头沟区</option>
+						<option value="12">房山区</option>
+						<option value="13">通州区</option>
+						<option value="14">顺义区</option>
+						<option value="15">昌平区</option>
+						<option value="16">大兴区</option>
+						<option value="17">怀柔区</option>
+						<option value="18">平谷区</option>
+						<option value="19">密云县</option>
+						<option value="20">延庆县</option>
+					</select>
+					
+				</p>
+				<p>
+					联系地址：<input type="text" name="" id="lianxi" value="" />
+					<b id="lianxi1" style="display: none;">请输入正确的联系地址</b>
+				</p>
+				<p>
+					性别：<input type="radio" name="sex"/>男<input type="radio" name="sex"/>女
+				</p>
+				<p>
+					*手机：<input type="text" name="" id="shouji" value="" />
+					<b id="shouji1" style="display: none;">请输入正确的手机号</b>
+				</p>
+				<p>
+					邮编：<input type="text" name="" id="youbian" value="" />
+					<b id="youbian1" style="display: none;">请输入正确的邮政编码</b>
+				</p>
 				
+				<!--代码部分begin-->
+				<div id="lanrenzhijia">出生日期
+				<input class="jcDate" style="width:200px; height:40px; line-height:20px; padding:4px; margin:0;" />
+				</div><br />
+				
+				<p><input type="checkbox" />我已阅读并同意 <a href="#">会员注册协议</a> 和 <a href="#">隐私保护政策</a></p>
+				<p><input type="button" name="zhu1" id="zhu1" value="注册" /></p>
+				
+				<script type="text/javascript">
+					var oA = document.getElementById("zhanghao");
+					var oB = document.getElementById("mima");
+					var oC = document.getElementById("tongmi");
+					var oD = document.getElementById("xingming");
+					var oE = document.getElementById("lianxi");
+					var oF = document.getElementById("shouji");
+					var oG = document.getElementById("youbian");
+					var oA1 = document.getElementById("zhanghao1");
+					var oB1 = document.getElementById("mima1");
+					var oC1 = document.getElementById("tongmi1");
+					var oD1 = document.getElementById("xingming1");
+					var oE1 = document.getElementById("lianxi1");
+					var oF1 = document.getElementById("shouji1");
+					var oG1 = document.getElementById("youbian1");
+					
+					//账号
+					oA.onblur =function(){
+						let rel = /^[\u4E00-\u9FA5A-Za-z0-9]{6,20}$/ || /^\w+([-+.]\w+)@\w+([-.]\w+).\w+([-.]\w+)*$/ || /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+						var str = oA.value;
+						if(!rel.test(str)){
+							oA1.style.display = 'block';
+						}else{
+							oA1.style.display = 'none';
+						}
+					}
+					//密码
+					oB.onblur = function(){
+						let rel = /^[\u4E00-\u9FA5A-Za-z0-9_]+$/;
+						var str = oB.value;
+						if(!rel.test(str)){
+							oB1.style.display = 'block';
+						}else{
+							oB1.style.display = 'none';
+						}
+					}	
+					//确认密码
+					oC.onblur = function(){
+						if(oC.value == oB.value){
+							oB1.style.display = 'none';
+						}else{
+							oB1.style.display = 'block';
+						}
+					}	
+					//正确的姓名
+					oD.onblur = function(){
+						let rel = /^[\u4e00-\u9fa5]{0,}$/;
+						var str = oD.value;
+						if(!rel.test(str)){
+							oD1.style.display = 'block';
+						}else{
+							oD1.style.display = 'none';
+						}
+					}
+					//联系地址
+					oE.onblur = function(){
+						let rel = /^[\u4E00-\u9FA5A-Za-z0-9_]+$/;
+						var str = oE.value;
+						if(!rel.test(str)){
+							oE1.style.display = 'block';
+						}else{
+							oE1.style.display = 'none';
+						}
+					}
+					//手机号
+					oF.onblur = function(){
+						let rel = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+						var str = oF.value;
+						if(!rel.test(str)){
+							oF1.style.display = 'block';
+						}else{
+							oF1.style.display = 'none';
+						}
+					}
+					//邮编
+					oG.onblur = function(){
+						let rel = /[1-9]\d{5}(?!\d)/;
+						var str = oG.value;
+						if(!rel.test(str)){
+							oG1.style.display = 'block';
+						}else{
+							oG1.style.display = 'none';
+						}
+					}
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</script>
 			</div>
+			
 			
 		</div>
 		<div class="cen_right">
-			<p>已经有会员账号请直接登录<button>转到登录页</button></p>
+			<p>已经有会员账号请直接登录<a href="register.html" class="deng_1">转到登录页</a></p>
 		</div>
 	</div>
 
@@ -469,7 +681,7 @@
 	</div>
 	<!--bottom-->
 	<div class="bottom">
-		© 2018 All rights reserved   有任何购物问题请联系我们在线客服 | 电话：13157632491 | 工作时间：周一至周五 8:00－18:00  粤ICP备16005068 
+		© 2018 All rights reserved   有任何购物问题请联系我们在线客服 | 电话：13157632491 | 工作时间：周一至周五 8:00－18:00  粤ICP备16005068 <img src="img/bottom_large_img.png" style="margin-left: 60px;"/>
 	</div>
 	<!--锚点-->
 	<div class="maodian">
