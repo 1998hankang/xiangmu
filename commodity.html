@@ -338,43 +338,232 @@
 		</div>
 		<div class="cen_cen">
 			<div class="cen_cleft">
-				<div class="jing">
-					<div class="big">
-						<img src="img/detail.jpg/ff85c0f17ca360195d75713eadb9c7a2.jpg"/>
-						<img src="img/detail.jpg/3cdad859b26153b5ed475df1ec3bcb3b.jpg"/>
-						<img src="img/detail.jpg/a7eb1d6f5cfa4d00b8e03a2aa9f2cd26.jpg"/>
-						<img src="img/detail.jpg/f6e5f6bb1f34fc5d0cc1e304ad5cd83e.jpg"/>
-						
-					</div>
-					<div class="small">
-						<span class="span1"></span>
-						<img src="img/detail.jpg/ff85c0f17ca360195d75713eadb9c7a2.jpg"/>
-						<img src="img/detail.jpg/3cdad859b26153b5ed475df1ec3bcb3b.jpg"/>
-						<img src="img/detail.jpg/a7eb1d6f5cfa4d00b8e03a2aa9f2cd26.jpg"/>
-						<img src="img/detail.jpg/f6e5f6bb1f34fc5d0cc1e304ad5cd83e.jpg"/>
-						<span class="span2"></span>
-					</div>
-					<button>分享</button>	<button>收藏</button>
-				</div>
+				
+		<div id="div1">
+			<div class="small_pic">
+				<span class="mark"></span>   <!--遮罩层-->
+				<span class="float_layer"></span>
+				<img id="s-img1" src="img/qing2.jpg" />
+				<img id="s-img2" src="img/hei2.jpg"/>
+				<img id="s-img3" src="img/zi2.jpg" alt="" />
+				<img id="s-img4" src="img/lv2.jpg" alt="" />
+				
+			</div>
+			<div id="bottom">
+				<span id="bottom-left">
+					
+				</span>
+				<a id='a1' href="#"><img src="img/qing1.jpg"/></a>
+				<a id="a2" href="#"><img src="img/hei1.jpg"/></a>
+				<a id="a3" href="#"><img src="img/zi1.jpg"/></a>
+				<a id="a4" href="#"><img src="img/lv1.jpg"/></a>
+				<span id="bottom-right">
+					
+				</span>
+			</div>
+			<div class="big_pic">
+				<img id="b-img1" src="img/qing3.jpg" />
+				<img id="b-img2" src="img/hei3.jpg"/>
+				<img id="b-img3" src="img/zi3.jpg"/>
+				<img id="b-img4" src="img/lv3.jpg"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			
+			$('#a2').hover(function(){
+				$('#s-img2').css('display','block');
+				$('#b-img2').css('display','block');
+				$('#s-img1').css('display','none');
+				$('#b-img1').css('display','none');
+				$('#s-img3').css('display','none');
+				$('#b-img3').css('display','none');
+				$('#s-img4').css('display','none');
+				$('#b-img4').css('display','none')
+			})
+			$('#a1').hover(function(){
+				$('#s-img1').css('display','block');
+				$('#b-img1').css('display','block');
+				$('#s-img2').css('display','none');
+				$('#b-img2').css('display','none');
+				$('#s-img3').css('display','none');
+				$('#b-img3').css('display','none');
+				$('#s-img4').css('display','none');
+				$('#b-img4').css('display','none');
+			})
+			$('#a3').hover(function(){
+				$('#s-img3').css('display','block');
+				$('#b-img3').css('display','block');
+				$('#s-img2').css('display','none');
+				$('#b-img2').css('display','none');
+				$('#s-img1').css('display','none');
+				$('#b-img1').css('display','none');
+				$('#s-img4').css('display','none');
+				$('#b-img4').css('display','none');
+			})
+			$('#a4').hover(function(){
+				$('#s-img4').css('display','block');
+				$('#b-img4').css('display','block');
+				$('#s-img2').css('display','none');
+				$('#b-img2').css('display','none')
+				$('#s-img1').css('display','none');
+				$('#b-img1').css('display','none')
+				$('#s-img3').css('display','none');
+				$('#b-img3').css('display','none')
+			})
+		})
+			
+		
+	</script>
+	<script type="text/javascript">
+		
+			//获取所需页面元素
+			//获取大盒子
+			let oBigDiv = document.getElementById("div1");
+			//获取小图所在的盒子
+			let oSmallPic = byClassName(document,'small_pic')[0];
+			//获取遮罩层
+			let oMark = byClassName(document,'mark')[0];
+			//获取滑块
+			let oFloat = byClassName(document,'float_layer')[0];
+			//获取大图所在的盒子
+			let oBigPic = byClassName(document,'big_pic')[0];
+			//获取大图
+			let oBigImage = oBigPic.getElementsByTagName('img')[0];
+			let oBigImage1 = oBigPic.getElementsByTagName('img')[1];
+			let oBigImage2 = oBigPic.getElementsByTagName('img')[2];
+			let oBigImage3 = oBigPic.getElementsByTagName('img')[3];
+			//给遮罩层加鼠标移入事件
+			oMark.onmouseenter = function(){
+				oFloat.style.display = 'block';
+				oBigPic.style.display = 'block';
+			}
+			//给遮罩层加鼠标移出事件
+			oMark.onmouseleave = function(){
+				oFloat.style.display = 'none';
+				oBigPic.style.display = 'none';
+			}
+			//鼠标跟随
+			oMark.onmousemove = function(evt){
+				//事件对象的兼容
+				let e = evt || window.event;
+				let left = e.pageX - oBigDiv.offsetLeft - oMark.offsetLeft - oFloat.offsetWidth / 2;
+				let top = e.pageY - oBigDiv.offsetTop - oMark.offsetTop - oFloat.offsetHeight / 2;
+				//设置边界
+				if(left <= oMark.offsetLeft){
+					left = oMark.offsetLeft;
+				}else if(left >= oMark.offsetWidth - oFloat.offsetWidth){
+					left = oMark.offsetWidth - oFloat.offsetWidth;
+				}
+				if(top <= oMark.offsetTop){
+					top = oMark.offsetTop;
+				}else if(top >= oMark.offsetHeight - oFloat.offsetHeight){
+					top = oMark.offsetHeight - oFloat.offsetHeight;
+				}
+				oFloat.style.left = left + 'px';
+				oFloat.style.top = top + 'px';
+				
+				
+				//计算滑块在小图中移动的比例
+				let pX = left / (oMark.offsetWidth - oFloat.offsetWidth);
+				let pY = top / (oMark.offsetHeight - oFloat.offsetHeight);
+				//设置大图的移动
+				oBigImage.style.left = - pX * (oBigImage.offsetWidth - oBigPic.offsetWidth) + 'px';
+				oBigImage.style.top = - pY * (oBigImage.offsetHeight - oBigPic.offsetHeight) + 'px';
+				oBigImage1.style.left = - pX * (oBigImage1.offsetWidth - oBigPic.offsetWidth) + 'px';
+				oBigImage1.style.top = - pY * (oBigImage1.offsetHeight - oBigPic.offsetHeight) + 'px';
+				oBigImage2.style.left = - pX * (oBigImage2.offsetWidth - oBigPic.offsetWidth) + 'px';
+				oBigImage2.style.top = - pY * (oBigImage2.offsetHeight - oBigPic.offsetHeight) + 'px';
+				oBigImage3.style.left = - pX * (oBigImage3.offsetWidth - oBigPic.offsetWidth) + 'px';
+				oBigImage3.style.top = - pY * (oBigImage3.offsetHeight - oBigPic.offsetHeight) + 'px';
+				
+			}
+			
+			
+			function byClassName(obj,className){
+				if(obj.getElementsByClassName){
+					return obj.getElementsByClassName(className);
+				}else{
+					let arr = [];
+					let eles = document.getElementsByTagName('*');
+					for(let i = 0,len = eles.length;i < len;i ++){
+						if(eles[i].className === className){
+							arr.push(eles[i]);
+						}
+					}
+					return arr;
+				}
+			}
+		
+	</script>
+				
 				<div class="ming">
 					<h2>华为honor/荣耀 荣耀10智能拍照AI手机 </h2>
 					<p> 销售价： ￥3199.00 </p>
-					<p> 商品评分： /////..... (共0人评论) </p>
+					<p> 商品评分：☆☆☆☆☆<a href="#">(共0人评论)</a> </p>
 					<p>
-						货品编号：	00018-3
+						<span style="padding-right: 200px;">货品编号：	00018-3</span>
 						品牌： 	<a href="#">HUAWEI/华为</a>
 					</p>
 					<div class="goumai">
 						<p>颜色：<button>黑色</button>	<button>灰色</button>	<button>蓝色</button>	<button>紫色</button></p>
 						<p>容量：<button>128G</button></p>
-						<p>数量：<button>-</button><input type="text" id="shuliang" value="1" /><button>+</button><span>20</span></p>
-						<p><button>立即购买</button>	<button>加入购物车</button>	<button>扫一扫购买</button></p>
+						<p>数量：<button>-</button><input type="text" id="shuliang" value="1" /><button>+</button><button style="width:40px; margin-left: 10px; border: none;">20</button></p>
+						<p><button style="width:126px; height:42px; background:#e2232c; border: none; color:#fff;">立即购买</button>	<a href="date.html"><button style="width:126px; height:42px; background:#fc5910; border: none; color:#fff;">加入购物车</button></a>
+						<button style="background:#fff; border: none; font-size:12px;">
+							扫一扫购买
+							<img src="img/detail.jpg/098b9b77de648981a377f81b38b78465.png" alt="" style="width:20px; height:20px; ">
+						</button></p>
 					</div>
 				</div>
+				<div class="">
+					
+				</div>
 			</div>
-			<div class="cen_cright">
-				2
-			</div>
+			
+		<div class="cen_cright">
+			<a href="#" class="shuma">手机数码</a>
+			<h6>手机</h6>
+			<h5>移动硬盘</h5>
+		<div class="left_1">
+			<a href="#" class="mai">热卖商品</a>
+			<img src="img/detail.jpg/2a6f594a4108216c569a2dbdd4accd72(2).jpg" style="width:150px; height:150px;"/>
+			<a href="#" class="hua1">
+Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待
+				</a>
+			<span style="font-weight: bold; color:red">￥5588.00</span>￥5588.00
+			
+			<img src="img/detail.jpg/eaa52a39379fc3a1d2d2ed5cf4111f0e.jpg" style="width:150px; height:150px;"/>
+			<a href="#" class="hua1">
+Huawei/华为 畅享8 Plus 高清全网通移动联通电信4G手机双
+				</a>
+			<span style="font-weight: bold; color:red">￥1699.00</span>￥1699.00
+			
+			<img src="img/detail.jpg/ef0cd430c1022fdf4f795e6e2876ad2d.jpg" style="width:150px; height:150px;"/>
+			<a href="#" class="hua1">
+我的蜜肌 凝润补水保湿爽肤水
+				</a>
+			<span style="font-weight: bold; color:red">￥29.00</span>￥29.00
+			
+			<img src="img/detail.jpg/92ec7cc094f59f2115683a1b4fe9b407.jpg" style="width:150px; height:150px;"/>
+			<a href="#" class="hua1">
+潮汕特产虾丸 清蒸深海虾滑火锅食材500g/包
+				</a>
+			<span style="font-weight: bold; color:red">￥69.00</span>￥69.00
+			
+			
+		</div>
+		<div class="left_2">
+			<a href="#" class="lan">浏览过的商品</a>
+			<img src="img/detail.jpg/2a6f594a4108216c569a2dbdd4accd72(2).jpg"/ style="width:70px; height:70px;">刚才浏览了:
+			<a href="#">Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待</a><br />
+			<img src="img/detail.jpg/eaa52a39379fc3a1d2d2ed5cf4111f0e.jpg"/ style="width:70px; height:70px;">刚才浏览了:
+			<a href="#">Huawei/华为 P20 pro 全面屏徕卡三摄全网通4G手机 双卡双待</a>
+			<a href="#" class="qing">清除列表</a>
+		</div>
+		</div>
+			
 		</div>
 	</div>
 
